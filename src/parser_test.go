@@ -2,8 +2,10 @@ package main
 
 import (
 	"fmt"
+	"os"
 	"strings"
 	"testing"
+
 	"github.com/hexops/gotextdiff"
 	"github.com/hexops/gotextdiff/myers"
 	"github.com/hexops/gotextdiff/span"
@@ -17,23 +19,22 @@ func linewiseDiff(expected, actual string) string {
 func TestParser(t *testing.T) {
 	tests := []struct {
 		name string
-		content string
+		contentPath string
 		expectedContent string
 	}{
 		{
 			name: "empty file",
-			content: "",
+			contentPath: "empty.fcpxml",
 			expectedContent: "",
-		},
-		{
-			name: "should fail",
-			content: "",
-			expectedContent: "expected\n",
 		},
 	}
 	for _, testCase := range tests {
 		t.Run(testCase.name, func(t *testing.T) {
-			result, err := Parse(testCase.content)
+			contentBytes, err := os.ReadFile(testCase.contentPath)
+			if err != nil {
+				t.Errorf("Error while loading test file: %v", err)
+			}
+			result, err := Parse(string(contentBytes))
 			if err != nil {
 				t.Errorf("Error while parsing: %v", err)
 			}
