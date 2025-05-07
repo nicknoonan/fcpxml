@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+
+<fcpxml version="1.13">
+    <resources>
+        <format id="r1" name="FFVideoFormat1080p30" frameDuration="100/3000s" width="1920" height="1080" colorSpace="1-1-1 (Rec. 709)"/>
+        <effect id="r2" name="Cross Dissolve" uid="FxPlug:4731E73A-8DAC-4113-9A30-AE85B1761265"/>
+        <effect id="r3" name="Audio Crossfade" uid="FFAudioTransition"/>
+        <asset id="r4" name="IMG_4283" uid="8305EF7E0FD67861F504FB27D5E65BD3" start="0s" duration="176995/600s" hasVideo="1" format="r1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100">
+            <media-rep kind="original-media" sig="8305EF7E0FD67861F504FB27D5E65BD3" src="file:///Volumes/VideoMedia/Undercover/Undercover.fcpbundle/BackThenFeb25/Original%20Media/IMG_4283.mov">
+                <bookmark>Ym9va2wEAAAAAAQQMAAAAPGTLutGAJ00Gvd+NsITSOZ+Is8TBS/OJP5Z53EAgrGRjAMAAAQAAAADAwAAABgAKAcAAAABAQAAVm9sdW1lcwAKAAAAAQEAAFZpZGVvTWVkaWEAAAoAAAABAQAAVW5kZXJjb3ZlcgAAFAAAAAEBAABVbmRlcmNvdmVyLmZjcGJ1bmRsZQ0AAAABAQAAQmFja1RoZW5GZWIyNQAAAA4AAAABAQAAT3JpZ2luYWwgTWVkaWEAAAwAAAABAQAASU1HXzQyODMubW92HAAAAAEGAAAQAAAAIAAAADQAAABIAAAAZAAAAHwAAACUAAAACAAAAAQDAACkQgAAAAAAAAgAAAAEAwAAAgAAAAAAAAAIAAAABAMAAJUAAAAAAAAACAAAAAQDAADhCwAAAAAAAAgAAAAEAwAA5gsAAAAAAAAIAAAABAMAAO0ZAAAAAAAACAAAAAQDAADwGQAAAAAAABwAAAABBgAAzAAAANwAAADsAAAA/AAAAAwBAAAcAQAALAEAAAgAAAAABAAAQcarHQsAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAABsAAAABCQAAZmlsZTovLy9Wb2x1bWVzL1ZpZGVvTWVkaWEvAAgAAAAEAwAAAMD8dKMDAAAIAAAAAAQAAEHG26Kp+eb6JAAAAAEBAABFRDBBN0Q3Ny1FODQ2LTRFODQtQjk0Ri1DREE2M0JGQ0I1ODUYAAAAAQIAAAEBAAABAAAA7xMAAAEAAAAAAAAAAAAAABMAAAABAQAAL1ZvbHVtZXMvVmlkZW9NZWRpYQAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAACQgpbnAAAACAAAAAAEAABBxtUXTIAAACQAAAABAQAARkRENjNDQzYtMzBENi00QzU2LUI4QTctRTkzMDExNDUwQkRBGAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAABgAAAA/v///wDwAAAAAAAABwAAAAIgAADMAgAAAAAAAAUgAAA8AgAAAAAAABAgAABMAgAAAAAAABEgAACAAgAAAAAAABIgAABgAgAAAAAAABMgAABwAgAAAAAAACAgAACsAgAAAAAAAAQAAAADAwAAAPAAAAQAAAADAwAAAAAAAAQAAAADAwAAAQAAACAAAAABBgAAQAMAAEwDAABYAwAATAMAAEwDAABMAwAATAMAAEwDAACoAAAA/v///wEAAADYAgAADQAAAAQQAACoAAAAAAAAAAUQAAA8AQAAAAAAABAQAABwAQAAAAAAAEAQAABgAQAAAAAAAAAgAABkAwAAAAAAAAIgAAAgAgAAAAAAAAUgAACQAQAAAAAAABAgAAAgAAAAAAAAABEgAADUAQAAAAAAABIgAAC0AQAAAAAAABMgAADEAQAAAAAAACAgAAAAAgAAAAAAABDQAAAEAAAAAAAAAA==</bookmark>
+            </media-rep>
+            <metadata>
+                <md key="com.apple.proapps.studio.rawToLogConversion" value="0"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="HD (1-1-1)"/>
+                <md key="com.apple.proapps.studio.cameraISO" value="0"/>
+                <md key="com.apple.proapps.studio.cameraColorTemperature" value="0"/>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>H.264</string>
+                        <string>MPEG-4 AAC</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.mio.ingestDate" value="2025-03-26 13:58:32 -0400"/>
+            </metadata>
+        </asset>
+        <effect id="r5" name="Aurora 2" uid=".../Generators.localized/Dynamic Backgrounds.localized/Aurora 2.localized/Aurora 2.motn"/>
+        <asset id="r6" name="Undercover" uid="2D319005E85AEA976BB2B65316294933" start="0s" duration="0s" hasVideo="1" format="r7" videoSources="1">
+            <media-rep kind="original-media" sig="2D319005E85AEA976BB2B65316294933" src="file:///Volumes/VideoMedia/Undercover/Undercover.fcpbundle/BackThenFeb25/Original%20Media/Undercover.png">
+                <bookmark>Ym9va3AEAAAAAAQQMAAAAAfELYWq3MI4QGEJrwZ9alSqiE0cQt2c4u1xWbhk6MCkkAMAAAQAAAADAwAAABgAKAcAAAABAQAAVm9sdW1lcwAKAAAAAQEAAFZpZGVvTWVkaWEAAAoAAAABAQAAVW5kZXJjb3ZlcgAAFAAAAAEBAABVbmRlcmNvdmVyLmZjcGJ1bmRsZQ0AAAABAQAAQmFja1RoZW5GZWIyNQAAAA4AAAABAQAAT3JpZ2luYWwgTWVkaWEAAA4AAAABAQAAVW5kZXJjb3Zlci5wbmcAABwAAAABBgAAEAAAACAAAAA0AAAASAAAAGQAAAB8AAAAlAAAAAgAAAAEAwAApEIAAAAAAAAIAAAABAMAAAIAAAAAAAAACAAAAAQDAACVAAAAAAAAAAgAAAAEAwAA4QsAAAAAAAAIAAAABAMAAOYLAAAAAAAACAAAAAQDAADtGQAAAAAAAAgAAAAEAwAA8xkAAAAAAAAcAAAAAQYAANAAAADgAAAA8AAAAAABAAAQAQAAIAEAADABAAAIAAAAAAQAAEHGykaAgAAAGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAbAAAAAQkAAGZpbGU6Ly8vVm9sdW1lcy9WaWRlb01lZGlhLwAIAAAABAMAAADA/HSjAwAACAAAAAAEAABBxtuiqfnm+iQAAAABAQAARUQwQTdENzctRTg0Ni00RTg0LUI5NEYtQ0RBNjNCRkNCNTg1GAAAAAECAAABAQAAAQAAAO8TAAABAAAAAAAAAAAAAAATAAAAAQEAAC9Wb2x1bWVzL1ZpZGVvTWVkaWEACAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAkIKW5wAAAAgAAAAABAAAQcbVF0yAAAAkAAAAAQEAAEZERDYzQ0M2LTMwRDYtNEM1Ni1COEE3LUU5MzAxMTQ1MEJEQRgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAAYAAAAP7///8A8AAAAAAAAAcAAAACIAAA0AIAAAAAAAAFIAAAQAIAAAAAAAAQIAAAUAIAAAAAAAARIAAAhAIAAAAAAAASIAAAZAIAAAAAAAATIAAAdAIAAAAAAAAgIAAAsAIAAAAAAAAEAAAAAwMAAADwAAAEAAAAAwMAAAAAAAAEAAAAAwMAAAEAAAAgAAAAAQYAAEQDAABQAwAAXAMAAFADAABQAwAAUAMAAFADAABQAwAAqAAAAP7///8BAAAA3AIAAA0AAAAEEAAArAAAAAAAAAAFEAAAQAEAAAAAAAAQEAAAdAEAAAAAAABAEAAAZAEAAAAAAAAAIAAAaAMAAAAAAAACIAAAJAIAAAAAAAAFIAAAlAEAAAAAAAAQIAAAIAAAAAAAAAARIAAA2AEAAAAAAAASIAAAuAEAAAAAAAATIAAAyAEAAAAAAAAgIAAABAIAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            </media-rep>
+            <metadata>
+                <md key="com.apple.proapps.studio.rawToLogConversion" value="0"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="sRGB IEC61966-2.1"/>
+                <md key="com.apple.proapps.studio.cameraISO" value="0"/>
+                <md key="com.apple.proapps.studio.cameraColorTemperature" value="0"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2025-03-26 15:29:48 -0400"/>
+                <md key="com.apple.proapps.spotlight.kMDItemOrientation" value="0"/>
+            </metadata>
+        </asset>
+        <format id="r7" name="FFVideoFormatRateUndefined" width="851" height="283" colorSpace="1-13-1"/>
+        <effect id="r8" name="Four Corners" uid=".../Titles.localized/Build In:Out.localized/Four Corners.localized/Four Corners.moti"/>
+        <asset id="r9" name="IMG_4278" uid="5C90D6D9826F23D7AE46608331FB1E6A" start="0s" duration="330868/600s" hasVideo="1" format="r1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100">
+            <media-rep kind="original-media" sig="5C90D6D9826F23D7AE46608331FB1E6A" src="file:///Volumes/VideoMedia/Undercover/Undercover.fcpbundle/BackThenFeb25/Original%20Media/IMG_4278.mov">
+                <bookmark>Ym9va2wEAAAAAAQQMAAAACJdYhsufZxNc8yCFTYfhbsdS31//5WCohD5i6smB3prjAMAAAQAAAADAwAAABgAKAcAAAABAQAAVm9sdW1lcwAKAAAAAQEAAFZpZGVvTWVkaWEAAAoAAAABAQAAVW5kZXJjb3ZlcgAAFAAAAAEBAABVbmRlcmNvdmVyLmZjcGJ1bmRsZQ0AAAABAQAAQmFja1RoZW5GZWIyNQAAAA4AAAABAQAAT3JpZ2luYWwgTWVkaWEAAAwAAAABAQAASU1HXzQyNzgubW92HAAAAAEGAAAQAAAAIAAAADQAAABIAAAAZAAAAHwAAACUAAAACAAAAAQDAACkQgAAAAAAAAgAAAAEAwAAAgAAAAAAAAAIAAAABAMAAJUAAAAAAAAACAAAAAQDAADhCwAAAAAAAAgAAAAEAwAA5gsAAAAAAAAIAAAABAMAAO0ZAAAAAAAACAAAAAQDAADuGQAAAAAAABwAAAABBgAAzAAAANwAAADsAAAA/AAAAAwBAAAcAQAALAEAAAgAAAAABAAAQcarHUSAAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAABsAAAABCQAAZmlsZTovLy9Wb2x1bWVzL1ZpZGVvTWVkaWEvAAgAAAAEAwAAAMD8dKMDAAAIAAAAAAQAAEHG26Kp+eb6JAAAAAEBAABFRDBBN0Q3Ny1FODQ2LTRFODQtQjk0Ri1DREE2M0JGQ0I1ODUYAAAAAQIAAAEBAAABAAAA7xMAAAEAAAAAAAAAAAAAABMAAAABAQAAL1ZvbHVtZXMvVmlkZW9NZWRpYQAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAACQgpbnAAAACAAAAAAEAABBxtUXTIAAACQAAAABAQAARkRENjNDQzYtMzBENi00QzU2LUI4QTctRTkzMDExNDUwQkRBGAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAABgAAAA/v///wDwAAAAAAAABwAAAAIgAADMAgAAAAAAAAUgAAA8AgAAAAAAABAgAABMAgAAAAAAABEgAACAAgAAAAAAABIgAABgAgAAAAAAABMgAABwAgAAAAAAACAgAACsAgAAAAAAAAQAAAADAwAAAPAAAAQAAAADAwAAAAAAAAQAAAADAwAAAQAAACAAAAABBgAAQAMAAEwDAABYAwAATAMAAEwDAABMAwAATAMAAEwDAACoAAAA/v///wEAAADYAgAADQAAAAQQAACoAAAAAAAAAAUQAAA8AQAAAAAAABAQAABwAQAAAAAAAEAQAABgAQAAAAAAAAAgAABkAwAAAAAAAAIgAAAgAgAAAAAAAAUgAACQAQAAAAAAABAgAAAgAAAAAAAAABEgAADUAQAAAAAAABIgAAC0AQAAAAAAABMgAADEAQAAAAAAACAgAAAAAgAAAAAAABDQAAAEAAAAAAAAAA==</bookmark>
+            </media-rep>
+            <metadata>
+                <md key="com.apple.proapps.studio.rawToLogConversion" value="0"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="HD (1-1-1)"/>
+                <md key="com.apple.proapps.studio.cameraISO" value="0"/>
+                <md key="com.apple.proapps.studio.cameraColorTemperature" value="0"/>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>H.264</string>
+                        <string>MPEG-4 AAC</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.mio.ingestDate" value="2025-03-26 13:58:32 -0400"/>
+            </metadata>
+        </asset>
+        <asset id="r10" name="IMG_4280" uid="BF4D92DC4889BA04D78A16AF30547878" start="0s" duration="434023/600s" hasVideo="1" format="r1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100">
+            <media-rep kind="original-media" sig="BF4D92DC4889BA04D78A16AF30547878" src="file:///Volumes/VideoMedia/Undercover/Undercover.fcpbundle/BackThenFeb25/Original%20Media/IMG_4280.mov">
+                <bookmark>Ym9va2wEAAAAAAQQMAAAADNOY4wnsKorPz/kQm1ijWlh72nQYnclzba0NBW5BwFejAMAAAQAAAADAwAAABgAKAcAAAABAQAAVm9sdW1lcwAKAAAAAQEAAFZpZGVvTWVkaWEAAAoAAAABAQAAVW5kZXJjb3ZlcgAAFAAAAAEBAABVbmRlcmNvdmVyLmZjcGJ1bmRsZQ0AAAABAQAAQmFja1RoZW5GZWIyNQAAAA4AAAABAQAAT3JpZ2luYWwgTWVkaWEAAAwAAAABAQAASU1HXzQyODAubW92HAAAAAEGAAAQAAAAIAAAADQAAABIAAAAZAAAAHwAAACUAAAACAAAAAQDAACkQgAAAAAAAAgAAAAEAwAAAgAAAAAAAAAIAAAABAMAAJUAAAAAAAAACAAAAAQDAADhCwAAAAAAAAgAAAAEAwAA5gsAAAAAAAAIAAAABAMAAO0ZAAAAAAAACAAAAAQDAADxGQAAAAAAABwAAAABBgAAzAAAANwAAADsAAAA/AAAAAwBAAAcAQAALAEAAAgAAAAABAAAQcarHY0AAAAYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAABsAAAABCQAAZmlsZTovLy9Wb2x1bWVzL1ZpZGVvTWVkaWEvAAgAAAAEAwAAAMD8dKMDAAAIAAAAAAQAAEHG26Kp+eb6JAAAAAEBAABFRDBBN0Q3Ny1FODQ2LTRFODQtQjk0Ri1DREE2M0JGQ0I1ODUYAAAAAQIAAAEBAAABAAAA7xMAAAEAAAAAAAAAAAAAABMAAAABAQAAL1ZvbHVtZXMvVmlkZW9NZWRpYQAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAACQgpbnAAAACAAAAAAEAABBxtUXTIAAACQAAAABAQAARkRENjNDQzYtMzBENi00QzU2LUI4QTctRTkzMDExNDUwQkRBGAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAABgAAAA/v///wDwAAAAAAAABwAAAAIgAADMAgAAAAAAAAUgAAA8AgAAAAAAABAgAABMAgAAAAAAABEgAACAAgAAAAAAABIgAABgAgAAAAAAABMgAABwAgAAAAAAACAgAACsAgAAAAAAAAQAAAADAwAAAPAAAAQAAAADAwAAAAAAAAQAAAADAwAAAQAAACAAAAABBgAAQAMAAEwDAABYAwAATAMAAEwDAABMAwAATAMAAEwDAACoAAAA/v///wEAAADYAgAADQAAAAQQAACoAAAAAAAAAAUQAAA8AQAAAAAAABAQAABwAQAAAAAAAEAQAABgAQAAAAAAAAAgAABkAwAAAAAAAAIgAAAgAgAAAAAAAAUgAACQAQAAAAAAABAgAAAgAAAAAAAAABEgAADUAQAAAAAAABIgAAC0AQAAAAAAABMgAADEAQAAAAAAACAgAAAAAgAAAAAAABDQAAAEAAAAAAAAAA==</bookmark>
+            </media-rep>
+            <metadata>
+                <md key="com.apple.proapps.studio.rawToLogConversion" value="0"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="HD (1-1-1)"/>
+                <md key="com.apple.proapps.studio.cameraISO" value="0"/>
+                <md key="com.apple.proapps.studio.cameraColorTemperature" value="0"/>
+                <md key="com.apple.proapps.spotlight.kMDItemCodecs">
+                    <array>
+                        <string>H.264</string>
+                        <string>MPEG-4 AAC</string>
+                    </array>
+                </md>
+                <md key="com.apple.proapps.mio.ingestDate" value="2025-03-26 13:58:32 -0400"/>
+            </metadata>
+        </asset>
+    </resources>
+    <library location="file:///Volumes/VideoMedia/Undercover/Undercover.fcpbundle/">
+        <event name="BackThenFeb25" uid="CD01680F-81AA-4B85-AE57-5472D7DAD2B4">
+            <project name="UndercoverDemo1" uid="82972BEB-DBD9-4F9C-83D6-0DB107E30E23" modDate="2025-05-06 19:03:27 -0400">
+                <sequence format="r1" duration="385800/3000s" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                    <spine>
+                        <transition name="Cross Dissolve" offset="0s" duration="1s">
+                            <filter-video ref="r2" name="Cross Dissolve">
+                                <data key="effectConfig">YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGlCwwVFhdVJG51bGzTDQ4PEBIUV05TLmtleXNaTlMub2JqZWN0c1YkY2xhc3OhEYACoROAA4AEXXBsdWdpblZlcnNpb24QAdIYGRobWiRjbGFzc25hbWVYJGNsYXNzZXNfEBNOU011dGFibGVEaWN0aW9uYXJ5oxocHVxOU0RpY3Rpb25hcnlYTlNPYmplY3QIERokKTI3SUxRU1lfZm55gIKEhoiKmJqfqrPJzdoAAAAAAAABAQAAAAAAAAAeAAAAAAAAAAAAAAAAAAAA4w==</data>
+                                <param name="Look" key="1" value="11 (Video)"/>
+                                <param name="Amount" key="2" value="50"/>
+                                <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                <param name="Ease Amount" key="51" value="0"/>
+                            </filter-video>
+                            <filter-audio ref="r3" name="Audio Crossfade"/>
+                        </transition>
+                        <asset-clip ref="r4" offset="0s" name="IMG_4283" start="122200/3000s" duration="70200/3000s" tcFormat="NDF" audioRole="dialogue">
+                            <adjust-transform position="34.2851 20.0573" scale="1.75274 1.75274"/>
+                            <spine lane="1" offset="611/15s">
+                                <video ref="r5" offset="0s" name="Aurora 2" start="3600s" duration="2995200/768000s"/>
+                                <transition name="Cross Dissolve" offset="2227200/768000s" duration="1s">
+                                    <filter-video ref="r2" name="Cross Dissolve">
+                                        <data key="effectConfig">YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGlCwwVFhdVJG51bGzTDQ4PEBIUV05TLmtleXNaTlMub2JqZWN0c1YkY2xhc3OhEYACoROAA4AEXXBsdWdpblZlcnNpb24QAdIYGRobWiRjbGFzc25hbWVYJGNsYXNzZXNfEBNOU011dGFibGVEaWN0aW9uYXJ5oxocHVxOU0RpY3Rpb25hcnlYTlNPYmplY3QIERokKTI3SUxRU1lfZm55gIKEhoiKmJqfqrPJzdoAAAAAAAABAQAAAAAAAAAeAAAAAAAAAAAAAAAAAAAA4w==</data>
+                                        <param name="Look" key="1" value="11 (Video)"/>
+                                        <param name="Amount" key="2" value="50"/>
+                                        <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                        <param name="Ease Amount" key="51" value="0"/>
+                                    </filter-video>
+                                </transition>
+                            </spine>
+                            <spine lane="2" offset="611/15s">
+                                <transition name="Cross Dissolve" offset="0s" duration="1s">
+                                    <filter-video ref="r2" name="Cross Dissolve">
+                                        <data key="effectConfig">YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGlCwwVFhdVJG51bGzTDQ4PEBIUV05TLmtleXNaTlMub2JqZWN0c1YkY2xhc3OhEYACoROAA4AEXXBsdWdpblZlcnNpb24QAdIYGRobWiRjbGFzc25hbWVYJGNsYXNzZXNfEBNOU011dGFibGVEaWN0aW9uYXJ5oxocHVxOU0RpY3Rpb25hcnlYTlNPYmplY3QIERokKTI3SUxRU1lfZm55gIKEhoiKmJqfqrPJzdoAAAAAAAABAQAAAAAAAAAeAAAAAAAAAAAAAAAAAAAA4w==</data>
+                                        <param name="Look" key="1" value="11 (Video)"/>
+                                        <param name="Amount" key="2" value="50"/>
+                                        <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                        <param name="Ease Amount" key="51" value="0"/>
+                                    </filter-video>
+                                    <chapter-marker start="3600s" duration="100/3000s" value="ChapA" posterOffset="11/30s"/>
+                                </transition>
+                                <video ref="r6" offset="0s" name="Undercover" start="3600s" duration="4s"/>
+                                <transition name="Cross Dissolve" offset="3s" duration="1s">
+                                    <filter-video ref="r2" name="Cross Dissolve">
+                                        <data key="effectConfig">YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGlCwwVFhdVJG51bGzTDQ4PEBIUV05TLmtleXNaTlMub2JqZWN0c1YkY2xhc3OhEYACoROAA4AEXXBsdWdpblZlcnNpb24QAdIYGRobWiRjbGFzc25hbWVYJGNsYXNzZXNfEBNOU011dGFibGVEaWN0aW9uYXJ5oxocHVxOU0RpY3Rpb25hcnlYTlNPYmplY3QIERokKTI3SUxRU1lfZm55gIKEhoiKmJqfqrPJzdoAAAAAAAABAQAAAAAAAAAeAAAAAAAAAAAAAAAAAAAA4w==</data>
+                                        <param name="Look" key="1" value="11 (Video)"/>
+                                        <param name="Amount" key="2" value="50"/>
+                                        <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                        <param name="Ease Amount" key="51" value="0"/>
+                                    </filter-video>
+                                </transition>
+                            </spine>
+                            <title ref="r8" lane="1" offset="135400/3000s" name="Bruce Springsteen - Four Corners" start="3600s" duration="12100/3000s">
+                                <param name="Position" key="9999/987115588/987115590/1/100/101">
+                                    <param name="X" key="1">
+                                        <keyframeAnimation>
+                                            <keyframe time="256256/7680000s" value="-131.579"/>
+                                            <keyframe time="3587584/7680000s" value="1019.89"/>
+                                            <keyframe time="27163136/7680000s" value="1019.89"/>
+                                        </keyframeAnimation>
+                                    </param>
+                                    <param name="Y" key="2">
+                                        <keyframeAnimation>
+                                            <keyframe time="27163136/7680000s" value="-782.574"/>
+                                            <keyframe time="30494464/7680000s" value="-219.322"/>
+                                        </keyframeAnimation>
+                                    </param>
+                                </param>
+                                <param name="Editable in FCP" key="9999/987115588/987115590/2/350" value="1"/>
+                                <param name="Alignment" key="9999/987115588/987115590/2/354/987121042/401" value="1 (Center)"/>
+                                <param name="Wrap Mode" key="9999/987115588/987115590/5/987115592/38/42/5" value="1 (Repeat)"/>
+                                <param name="Position" key="9999/987115588/987115670/1/100/101">
+                                    <param name="X" key="1">
+                                        <keyframeAnimation>
+                                            <keyframe time="27163136/7680000s" value="-80.5471"/>
+                                            <keyframe time="30494464/7680000s" value="1232.55"/>
+                                        </keyframeAnimation>
+                                    </param>
+                                    <param name="Y" key="2">
+                                        <keyframeAnimation>
+                                            <keyframe time="512512/7680000s" value="-647.994"/>
+                                            <keyframe time="3587584/7680000s" value="-190.586"/>
+                                            <keyframe time="27163136/7680000s" value="-190.586"/>
+                                        </keyframeAnimation>
+                                    </param>
+                                </param>
+                                <param name="Editable in FCP" key="9999/987115588/987115670/2/350" value="1"/>
+                                <param name="Alignment" key="9999/987115588/987115670/2/354/987121060/401" value="1 (Center)"/>
+                                <param name="Wrap Mode" key="9999/987115588/987115670/5/987115673/38/42/5" value="1 (Repeat)"/>
+                                <param name="Location" key="9999/987116306/100/987116571/2/100" value="2 (Top Left)"/>
+                                <text>
+                                    <text-style ref="ts1">Bruce Springsteen</text-style>
+                                </text>
+                                <text>
+                                    <text-style ref="ts2">Born To Run</text-style>
+                                </text>
+                                <text-style-def id="ts1">
+                                    <text-style font="Coolvetica" fontSize="134" fontFace="Regular" fontColor="0.264852 0.171643 0.512087 1" bold="1" shadowColor="0 0 0 0.6" shadowOffset="4 315" shadowBlurRadius="2" alignment="center"/>
+                                </text-style-def>
+                                <text-style-def id="ts2">
+                                    <text-style font="Coolvetica" fontSize="134" fontFace="Regular" fontColor="0.478453 0.283377 0.99857 1" bold="1" shadowColor="0 0 0 0.6" shadowOffset="4 315" shadowBlurRadius="2" alignment="center"/>
+                                </text-style-def>
+                                <adjust-transform position="72.0341 -50.5395"/>
+                            </title>
+                        </asset-clip>
+                        <transition name="Cross Dissolve" offset="68700/3000s" duration="1s">
+                            <filter-video ref="r2" name="Cross Dissolve">
+                                <data key="effectConfig">YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGlCwwVFhdVJG51bGzTDQ4PEBIUV05TLmtleXNaTlMub2JqZWN0c1YkY2xhc3OhEYACoROAA4AEXXBsdWdpblZlcnNpb24QAdIYGRobWiRjbGFzc25hbWVYJGNsYXNzZXNfEBNOU011dGFibGVEaWN0aW9uYXJ5oxocHVxOU0RpY3Rpb25hcnlYTlNPYmplY3QIERokKTI3SUxRU1lfZm55gIKEhoiKmJqfqrPJzdoAAAAAAAABAQAAAAAAAAAeAAAAAAAAAAAAAAAAAAAA4w==</data>
+                                <param name="Look" key="1" value="11 (Video)"/>
+                                <param name="Amount" key="2" value="50"/>
+                                <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                <param name="Ease Amount" key="51" value="0"/>
+                            </filter-video>
+                            <filter-audio ref="r3" name="Audio Crossfade"/>
+                            <chapter-marker start="7201/2s" duration="100/3000s" value="ChapB" posterOffset="11/30s"/>
+                        </transition>
+                        <asset-clip ref="r4" offset="70200/3000s" name="IMG_4283" start="936/5s" duration="45900/3000s" tcFormat="NDF" audioRole="dialogue">
+                            <adjust-transform position="15.0385 4.54017" scale="1.40029 1.40029"/>
+                            <chapter-marker start="202s" duration="100/3000s" value="ChapC" posterOffset="11/30s"/>
+                        </asset-clip>
+                        <transition name="Cross Dissolve" offset="114600/3000s" duration="1s">
+                            <filter-video ref="r2" name="Cross Dissolve">
+                                <data key="effectConfig">YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGlCwwVFhdVJG51bGzTDQ4PEBIUV05TLmtleXNaTlMub2JqZWN0c1YkY2xhc3OhEYACoROAA4AEXXBsdWdpblZlcnNpb24QAdIYGRobWiRjbGFzc25hbWVYJGNsYXNzZXNfEBNOU011dGFibGVEaWN0aW9uYXJ5oxocHVxOU0RpY3Rpb25hcnlYTlNPYmplY3QIERokKTI3SUxRU1lfZm55gIKEhoiKmJqfqrPJzdoAAAAAAAABAQAAAAAAAAAeAAAAAAAAAAAAAAAAAAAA4w==</data>
+                                <param name="Look" key="1" value="11 (Video)"/>
+                                <param name="Amount" key="2" value="50"/>
+                                <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                <param name="Ease Amount" key="51" value="0"/>
+                            </filter-video>
+                            <filter-audio ref="r3" name="Audio Crossfade"/>
+                        </transition>
+                        <asset-clip ref="r9" offset="116100/3000s" name="IMG_4278" start="1102800/3000s" duration="47000/3000s" tcFormat="NDF" audioRole="dialogue">
+                            <adjust-transform position="33.5906 4.24828" scale="1.40969 1.40969"/>
+                            <title ref="r8" lane="1" offset="1104400/3000s" name="Peter Gabriel - Four Corners" start="3600s" duration="12100/3000s">
+                                <param name="Position" key="9999/987115588/987115590/1/100/101">
+                                    <param name="X" key="1">
+                                        <keyframeAnimation>
+                                            <keyframe time="256256/7680000s" value="-1335.96"/>
+                                            <keyframe time="3587584/7680000s" value="-184.494"/>
+                                            <keyframe time="27163136/7680000s" value="-184.494"/>
+                                        </keyframeAnimation>
+                                    </param>
+                                    <param name="Y" key="2">
+                                        <keyframeAnimation>
+                                            <keyframe time="27163136/7680000s" value="-45.5858"/>
+                                            <keyframe time="30494464/7680000s" value="517.666"/>
+                                        </keyframeAnimation>
+                                    </param>
+                                </param>
+                                <param name="Editable in FCP" key="9999/987115588/987115590/2/350" value="1"/>
+                                <param name="Alignment" key="9999/987115588/987115590/2/354/987121042/401" value="1 (Center)"/>
+                                <param name="Title Face Color" key="9999/987115588/987115590/5/987115592/14/16" value="0.99991 1 0.999878"/>
+                                <param name="Wrap Mode" key="9999/987115588/987115590/5/987115592/38/42/5" value="1 (Repeat)"/>
+                                <param name="Position" key="9999/987115588/987115670/1/100/101">
+                                    <param name="X" key="1">
+                                        <keyframeAnimation>
+                                            <keyframe time="27163136/7680000s" value="-80.5471"/>
+                                            <keyframe time="30494464/7680000s" value="1232.55"/>
+                                        </keyframeAnimation>
+                                    </param>
+                                    <param name="Y" key="2">
+                                        <keyframeAnimation>
+                                            <keyframe time="512512/7680000s" value="-647.994"/>
+                                            <keyframe time="3587584/7680000s" value="-190.586"/>
+                                            <keyframe time="27163136/7680000s" value="-190.586"/>
+                                        </keyframeAnimation>
+                                    </param>
+                                </param>
+                                <param name="Editable in FCP" key="9999/987115588/987115670/2/350" value="1"/>
+                                <param name="Alignment" key="9999/987115588/987115670/2/354/987121060/401" value="1 (Center)"/>
+                                <param name="Wrap Mode" key="9999/987115588/987115670/5/987115673/38/42/5" value="1 (Repeat)"/>
+                                <param name="Line 2 Font" key="9999/987115588/987115670/5/987115673/83" value="87 0"/>
+                                <param name="Location" key="9999/987116306/100/987116571/2/100" value="3 (Bottom Right)"/>
+                                <text>
+                                    <text-style ref="ts3">Peter Gabriel</text-style>
+                                </text>
+                                <text>
+                                    <text-style ref="ts4">Sledgehammer</text-style>
+                                </text>
+                                <text-style-def id="ts3">
+                                    <text-style font="Coolvetica" fontSize="134" fontFace="Regular" fontColor="0.987669 0.315388 0.723444 1" bold="1" shadowColor="0 0 0 0.6" shadowOffset="4 315" shadowBlurRadius="2" alignment="center"/>
+                                </text-style-def>
+                                <text-style-def id="ts4">
+                                    <text-style font="Coolvetica" fontSize="134" fontFace="Regular" fontColor="0.523365 0.189919 0.383231 1" bold="1" shadowColor="0 0 0 0.6" shadowOffset="4 315" shadowBlurRadius="2" alignment="center"/>
+                                </text-style-def>
+                                <adjust-transform position="-0.0830013 0"/>
+                            </title>
+                            <chapter-marker start="5522/15s" duration="100/3000s" value="ChapD" posterOffset="11/30s"/>
+                            <chapter-marker start="1883/5s" duration="100/3000s" value="ChapE" posterOffset="11/30s"/>
+                        </asset-clip>
+                        <transition name="Cross Dissolve" offset="161600/3000s" duration="1s">
+                            <filter-video ref="r2" name="Cross Dissolve">
+                                <data key="effectConfig">YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGlCwwVFhdVJG51bGzTDQ4PEBIUV05TLmtleXNaTlMub2JqZWN0c1YkY2xhc3OhEYACoROAA4AEXXBsdWdpblZlcnNpb24QAdIYGRobWiRjbGFzc25hbWVYJGNsYXNzZXNfEBNOU011dGFibGVEaWN0aW9uYXJ5oxocHVxOU0RpY3Rpb25hcnlYTlNPYmplY3QIERokKTI3SUxRU1lfZm55gIKEhoiKmJqfqrPJzdoAAAAAAAABAQAAAAAAAAAeAAAAAAAAAAAAAAAAAAAA4w==</data>
+                                <param name="Look" key="1" value="11 (Video)"/>
+                                <param name="Amount" key="2" value="50"/>
+                                <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                <param name="Ease Amount" key="51" value="0"/>
+                            </filter-video>
+                            <filter-audio ref="r3" name="Audio Crossfade"/>
+                        </transition>
+                        <asset-clip ref="r10" offset="163100/3000s" name="IMG_4280" start="98500/3000s" duration="55300/3000s" tcFormat="NDF" audioRole="dialogue">
+                            <title ref="r8" lane="1" offset="100100/3000s" name="Squeeze - Four Corners" start="3600s" duration="12100/3000s">
+                                <param name="Position" key="9999/987115588/987115590/1/100/101">
+                                    <param name="X" key="1">
+                                        <keyframeAnimation>
+                                            <keyframe time="256256/7680000s" value="-1335.96"/>
+                                            <keyframe time="3587584/7680000s" value="-184.494"/>
+                                            <keyframe time="27163136/7680000s" value="-184.494"/>
+                                        </keyframeAnimation>
+                                    </param>
+                                    <param name="Y" key="2">
+                                        <keyframeAnimation>
+                                            <keyframe time="27163136/7680000s" value="-45.5858"/>
+                                            <keyframe time="30494464/7680000s" value="517.666"/>
+                                        </keyframeAnimation>
+                                    </param>
+                                </param>
+                                <param name="Editable in FCP" key="9999/987115588/987115590/2/350" value="1"/>
+                                <param name="Alignment" key="9999/987115588/987115590/2/354/987121042/401" value="1 (Center)"/>
+                                <param name="Position" key="9999/987115588/987115670/1/100/101">
+                                    <param name="X" key="1">
+                                        <keyframeAnimation>
+                                            <keyframe time="27163136/7680000s" value="-80.5471"/>
+                                            <keyframe time="30494464/7680000s" value="1232.55"/>
+                                        </keyframeAnimation>
+                                    </param>
+                                    <param name="Y" key="2">
+                                        <keyframeAnimation>
+                                            <keyframe time="512512/7680000s" value="-647.994"/>
+                                            <keyframe time="3587584/7680000s" value="-190.586"/>
+                                            <keyframe time="27163136/7680000s" value="-190.586"/>
+                                        </keyframeAnimation>
+                                    </param>
+                                </param>
+                                <param name="Editable in FCP" key="9999/987115588/987115670/2/350" value="1"/>
+                                <param name="Alignment" key="9999/987115588/987115670/2/354/987121060/401" value="1 (Center)"/>
+                                <param name="Location" key="9999/987116306/100/987116571/2/100" value="1 (Top Right)"/>
+                                <text>
+                                    <text-style ref="ts5">Squeeze</text-style>
+                                </text>
+                                <text>
+                                    <text-style ref="ts6">Tempted</text-style>
+                                </text>
+                                <text-style-def id="ts5">
+                                    <text-style font="Coolvetica" fontSize="134" fontFace="Regular" fontColor="0.183091 0.55793 0.628418 1" bold="1" shadowColor="0 0 0 0.6" shadowOffset="4 315" shadowBlurRadius="2" alignment="center"/>
+                                </text-style-def>
+                                <text-style-def id="ts6">
+                                    <text-style font="Coolvetica" fontSize="134" fontFace="Regular" fontColor="0.342633 0.922302 0.999058 1" bold="1" shadowColor="0 0 0 0.6" shadowOffset="4 315" shadowBlurRadius="2" alignment="center"/>
+                                </text-style-def>
+                                <adjust-transform position="15.4908 17.0277"/>
+                            </title>
+                        </asset-clip>
+                        <transition name="Cross Dissolve" offset="216900/3000s" duration="1s">
+                            <filter-video ref="r2" name="Cross Dissolve">
+                                <data key="effectConfig">YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGlCwwVFhdVJG51bGzTDQ4PEBIUV05TLmtleXNaTlMub2JqZWN0c1YkY2xhc3OhEYACoROAA4AEXXBsdWdpblZlcnNpb24QAdIYGRobWiRjbGFzc25hbWVYJGNsYXNzZXNfEBNOU011dGFibGVEaWN0aW9uYXJ5oxocHVxOU0RpY3Rpb25hcnlYTlNPYmplY3QIERokKTI3SUxRU1lfZm55gIKEhoiKmJqfqrPJzdoAAAAAAAABAQAAAAAAAAAeAAAAAAAAAAAAAAAAAAAA4w==</data>
+                                <param name="Look" key="1" value="11 (Video)"/>
+                                <param name="Amount" key="2" value="50"/>
+                                <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                <param name="Ease Amount" key="51" value="0"/>
+                            </filter-video>
+                            <filter-audio ref="r3" name="Audio Crossfade"/>
+                        </transition>
+                        <asset-clip ref="r9" offset="218400/3000s" name="IMG_4278" start="551000/3000s" duration="54800/3000s" tcFormat="NDF" audioRole="dialogue">
+                            <adjust-transform position="40.3469 5.4518" scale="1.45789 1.45789"/>
+                            <title ref="r8" lane="1" offset="551500/3000s" name="Fleetwood Mac - Four Corners" start="3600s" duration="12100/3000s">
+                                <param name="Position" key="9999/987115588/987115590/1/100/101">
+                                    <param name="X" key="1">
+                                        <keyframeAnimation>
+                                            <keyframe time="256256/7680000s" value="-1335.96"/>
+                                            <keyframe time="3587584/7680000s" value="-184.494"/>
+                                            <keyframe time="27163136/7680000s" value="-184.494"/>
+                                        </keyframeAnimation>
+                                    </param>
+                                    <param name="Y" key="2">
+                                        <keyframeAnimation>
+                                            <keyframe time="27163136/7680000s" value="-45.5858"/>
+                                            <keyframe time="30494464/7680000s" value="517.666"/>
+                                        </keyframeAnimation>
+                                    </param>
+                                </param>
+                                <param name="Editable in FCP" key="9999/987115588/987115590/2/350" value="1"/>
+                                <param name="Alignment" key="9999/987115588/987115590/2/354/987121042/401" value="1 (Center)"/>
+                                <param name="Position" key="9999/987115588/987115670/1/100/101">
+                                    <param name="X" key="1">
+                                        <keyframeAnimation>
+                                            <keyframe time="27163136/7680000s" value="-80.5471"/>
+                                            <keyframe time="30494464/7680000s" value="1232.55"/>
+                                        </keyframeAnimation>
+                                    </param>
+                                    <param name="Y" key="2">
+                                        <keyframeAnimation>
+                                            <keyframe time="512512/7680000s" value="-647.994"/>
+                                            <keyframe time="3587584/7680000s" value="-190.586"/>
+                                            <keyframe time="27163136/7680000s" value="-190.586"/>
+                                        </keyframeAnimation>
+                                    </param>
+                                </param>
+                                <param name="Editable in FCP" key="9999/987115588/987115670/2/350" value="1"/>
+                                <param name="Alignment" key="9999/987115588/987115670/2/354/987121060/401" value="1 (Center)"/>
+                                <param name="Location" key="9999/987116306/100/987116571/2/100" value="3 (Bottom Right)"/>
+                                <text>
+                                    <text-style ref="ts7">Fleetwood Mac</text-style>
+                                </text>
+                                <text>
+                                    <text-style ref="ts8">Dreams</text-style>
+                                </text>
+                                <text-style-def id="ts7">
+                                    <text-style font="Coolvetica" fontSize="134" fontFace="Regular" fontColor="0.987669 0.315388 0.723444 1" bold="1" shadowColor="0 0 0 0.6" shadowOffset="4 315" shadowBlurRadius="2" alignment="center"/>
+                                </text-style-def>
+                                <text-style-def id="ts8">
+                                    <text-style font="Coolvetica" fontSize="134" fontFace="Regular" fontColor="0.523365 0.189919 0.383231 1" bold="1" shadowColor="0 0 0 0.6" shadowOffset="4 315" shadowBlurRadius="2" alignment="center"/>
+                                </text-style-def>
+                                <adjust-transform position="-43.9686 34.7831"/>
+                            </title>
+                        </asset-clip>
+                        <transition name="Cross Dissolve" offset="271700/3000s" duration="1s">
+                            <filter-video ref="r2" name="Cross Dissolve">
+                                <data key="effectConfig">YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGlCwwVFhdVJG51bGzTDQ4PEBIUV05TLmtleXNaTlMub2JqZWN0c1YkY2xhc3OhEYACoROAA4AEXXBsdWdpblZlcnNpb24QAdIYGRobWiRjbGFzc25hbWVYJGNsYXNzZXNfEBNOU011dGFibGVEaWN0aW9uYXJ5oxocHVxOU0RpY3Rpb25hcnlYTlNPYmplY3QIERokKTI3SUxRU1lfZm55gIKEhoiKmJqfqrPJzdoAAAAAAAABAQAAAAAAAAAeAAAAAAAAAAAAAAAAAAAA4w==</data>
+                                <param name="Look" key="1" value="11 (Video)"/>
+                                <param name="Amount" key="2" value="50"/>
+                                <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                <param name="Ease Amount" key="51" value="0"/>
+                            </filter-video>
+                            <filter-audio ref="r3" name="Audio Crossfade"/>
+                        </transition>
+                        <asset-clip ref="r10" offset="273200/3000s" name="IMG_4280" start="14773/30s" duration="43900/3000s" tcFormat="NDF" audioRole="dialogue">
+                            <title ref="r8" lane="1" offset="1476900/3000s" name="Cheap Trick - Four Corners" start="3600s" duration="12100/3000s">
+                                <param name="Position" key="9999/987115588/987115590/1/100/101">
+                                    <param name="X" key="1">
+                                        <keyframeAnimation>
+                                            <keyframe time="256256/7680000s" value="-1335.96"/>
+                                            <keyframe time="3587584/7680000s" value="-184.494"/>
+                                            <keyframe time="27163136/7680000s" value="-184.494"/>
+                                        </keyframeAnimation>
+                                    </param>
+                                    <param name="Y" key="2">
+                                        <keyframeAnimation>
+                                            <keyframe time="27163136/7680000s" value="-45.5858"/>
+                                            <keyframe time="30494464/7680000s" value="517.666"/>
+                                        </keyframeAnimation>
+                                    </param>
+                                </param>
+                                <param name="Editable in FCP" key="9999/987115588/987115590/2/350" value="1"/>
+                                <param name="Alignment" key="9999/987115588/987115590/2/354/987121042/401" value="1 (Center)"/>
+                                <param name="Position" key="9999/987115588/987115670/1/100/101">
+                                    <param name="X" key="1">
+                                        <keyframeAnimation>
+                                            <keyframe time="27163136/7680000s" value="-80.5471"/>
+                                            <keyframe time="30494464/7680000s" value="1232.55"/>
+                                        </keyframeAnimation>
+                                    </param>
+                                    <param name="Y" key="2">
+                                        <keyframeAnimation>
+                                            <keyframe time="512512/7680000s" value="-647.994"/>
+                                            <keyframe time="3587584/7680000s" value="-190.586"/>
+                                            <keyframe time="27163136/7680000s" value="-190.586"/>
+                                        </keyframeAnimation>
+                                    </param>
+                                </param>
+                                <param name="Editable in FCP" key="9999/987115588/987115670/2/350" value="1"/>
+                                <param name="Alignment" key="9999/987115588/987115670/2/354/987121060/401" value="1 (Center)"/>
+                                <param name="Location" key="9999/987116306/100/987116571/2/100" value="1 (Top Right)"/>
+                                <text>
+                                    <text-style ref="ts9">Cheap Trick</text-style>
+                                </text>
+                                <text>
+                                    <text-style ref="ts10">Surrender</text-style>
+                                </text>
+                                <text-style-def id="ts10">
+                                    <text-style font="Coolvetica" fontSize="134" fontFace="Regular" fontColor="0.342633 0.922302 0.999058 1" bold="1" shadowColor="0 0 0 0.6" shadowOffset="4 315" shadowBlurRadius="2" alignment="center"/>
+                                </text-style-def>
+                                <text-style-def id="ts9">
+                                    <text-style font="Coolvetica" fontSize="134" fontFace="Regular" fontColor="0.183091 0.55793 0.628418 1" bold="1" shadowColor="0 0 0 0.6" shadowOffset="4 315" shadowBlurRadius="2" alignment="center"/>
+                                </text-style-def>
+                                <adjust-transform position="-70.1928 14.5391"/>
+                            </title>
+                        </asset-clip>
+                        <transition name="Cross Dissolve" offset="315600/3000s" duration="1s">
+                            <filter-video ref="r2" name="Cross Dissolve">
+                                <data key="effectConfig">YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGlCwwVFhdVJG51bGzTDQ4PEBIUV05TLmtleXNaTlMub2JqZWN0c1YkY2xhc3OhEYACoROAA4AEXXBsdWdpblZlcnNpb24QAdIYGRobWiRjbGFzc25hbWVYJGNsYXNzZXNfEBNOU011dGFibGVEaWN0aW9uYXJ5oxocHVxOU0RpY3Rpb25hcnlYTlNPYmplY3QIERokKTI3SUxRU1lfZm55gIKEhoiKmJqfqrPJzdoAAAAAAAABAQAAAAAAAAAeAAAAAAAAAAAAAAAAAAAA4w==</data>
+                                <param name="Look" key="1" value="11 (Video)"/>
+                                <param name="Amount" key="2" value="50"/>
+                                <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                <param name="Ease Amount" key="51" value="0"/>
+                            </filter-video>
+                            <filter-audio ref="r3" name="Audio Crossfade"/>
+                        </transition>
+                        <asset-clip ref="r10" offset="317100/3000s" name="IMG_4280" start="673/3s" duration="68700/3000s" tcFormat="NDF" audioRole="dialogue">
+                            <title ref="r8" lane="1" offset="673200/3000s" name="No Doubt - Four Corners" start="3600s" duration="12100/3000s">
+                                <param name="Position" key="9999/987115588/987115590/1/100/101">
+                                    <param name="X" key="1">
+                                        <keyframeAnimation>
+                                            <keyframe time="256256/7680000s" value="-1335.96"/>
+                                            <keyframe time="3587584/7680000s" value="-184.494"/>
+                                            <keyframe time="27163136/7680000s" value="-184.494"/>
+                                        </keyframeAnimation>
+                                    </param>
+                                    <param name="Y" key="2">
+                                        <keyframeAnimation>
+                                            <keyframe time="27163136/7680000s" value="-45.5858"/>
+                                            <keyframe time="30494464/7680000s" value="517.666"/>
+                                        </keyframeAnimation>
+                                    </param>
+                                </param>
+                                <param name="Editable in FCP" key="9999/987115588/987115590/2/350" value="1"/>
+                                <param name="Alignment" key="9999/987115588/987115590/2/354/987121042/401" value="1 (Center)"/>
+                                <param name="Position" key="9999/987115588/987115670/1/100/101">
+                                    <param name="X" key="1">
+                                        <keyframeAnimation>
+                                            <keyframe time="27163136/7680000s" value="-80.5471"/>
+                                            <keyframe time="30494464/7680000s" value="1232.55"/>
+                                        </keyframeAnimation>
+                                    </param>
+                                    <param name="Y" key="2">
+                                        <keyframeAnimation>
+                                            <keyframe time="512512/7680000s" value="-647.994"/>
+                                            <keyframe time="3587584/7680000s" value="-190.586"/>
+                                            <keyframe time="27163136/7680000s" value="-190.586"/>
+                                        </keyframeAnimation>
+                                    </param>
+                                </param>
+                                <param name="Editable in FCP" key="9999/987115588/987115670/2/350" value="1"/>
+                                <param name="Alignment" key="9999/987115588/987115670/2/354/987121060/401" value="1 (Center)"/>
+                                <param name="Location" key="9999/987116306/100/987116571/2/100" value="2 (Top Left)"/>
+                                <text>
+                                    <text-style ref="ts11">No Doubt</text-style>
+                                </text>
+                                <text>
+                                    <text-style ref="ts12">I'm Just A Girl</text-style>
+                                </text>
+                                <text-style-def id="ts11">
+                                    <text-style font="Coolvetica" fontSize="134" fontFace="Regular" fontColor="0.264852 0.171643 0.512087 1" bold="1" shadowColor="0 0 0 0.6" shadowOffset="4 315" shadowBlurRadius="2" alignment="center"/>
+                                </text-style-def>
+                                <text-style-def id="ts12">
+                                    <text-style font="Coolvetica" fontSize="134" fontFace="Regular" fontColor="0.478453 0.283377 0.99857 1" bold="1" shadowColor="0 0 0 0.6" shadowOffset="4 315" shadowBlurRadius="2" alignment="center"/>
+                                </text-style-def>
+                                <adjust-transform position="-12.5401 -51.8316"/>
+                            </title>
+                            <spine lane="2" offset="7291/30s">
+                                <transition name="Cross Dissolve" offset="0s" duration="1s">
+                                    <filter-video ref="r2" name="Cross Dissolve">
+                                        <data key="effectConfig">YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGlCwwVFhdVJG51bGzTDQ4PEBIUV05TLmtleXNaTlMub2JqZWN0c1YkY2xhc3OhEYACoROAA4AEXXBsdWdpblZlcnNpb24QAdIYGRobWiRjbGFzc25hbWVYJGNsYXNzZXNfEBNOU011dGFibGVEaWN0aW9uYXJ5oxocHVxOU0RpY3Rpb25hcnlYTlNPYmplY3QIERokKTI3SUxRU1lfZm55gIKEhoiKmJqfqrPJzdoAAAAAAAABAQAAAAAAAAAeAAAAAAAAAAAAAAAAAAAA4w==</data>
+                                        <param name="Look" key="1" value="11 (Video)"/>
+                                        <param name="Amount" key="2" value="50"/>
+                                        <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                        <param name="Ease Amount" key="51" value="0"/>
+                                    </filter-video>
+                                </transition>
+                                <video ref="r6" offset="0s" name="Undercover" start="21641400/6000s" duration="24200/6000s"/>
+                                <transition name="Cross Dissolve" offset="18200/6000s" duration="1s">
+                                    <filter-video ref="r2" name="Cross Dissolve">
+                                        <data key="effectConfig">YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGlCwwVFhdVJG51bGzTDQ4PEBIUV05TLmtleXNaTlMub2JqZWN0c1YkY2xhc3OhEYACoROAA4AEXXBsdWdpblZlcnNpb24QAdIYGRobWiRjbGFzc25hbWVYJGNsYXNzZXNfEBNOU011dGFibGVEaWN0aW9uYXJ5oxocHVxOU0RpY3Rpb25hcnlYTlNPYmplY3QIERokKTI3SUxRU1lfZm55gIKEhoiKmJqfqrPJzdoAAAAAAAABAQAAAAAAAAAeAAAAAAAAAAAAAAAAAAAA4w==</data>
+                                        <param name="Look" key="1" value="11 (Video)"/>
+                                        <param name="Amount" key="2" value="50"/>
+                                        <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                        <param name="Ease Amount" key="51" value="0"/>
+                                    </filter-video>
+                                </transition>
+                            </spine>
+                            <spine lane="1" offset="1459/6s">
+                                <transition name="Cross Dissolve" offset="0s" duration="1s">
+                                    <filter-video ref="r2" name="Cross Dissolve">
+                                        <data key="effectConfig">YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGlCwwVFhdVJG51bGzTDQ4PEBIUV05TLmtleXNaTlMub2JqZWN0c1YkY2xhc3OhEYACoROAA4AEXXBsdWdpblZlcnNpb24QAdIYGRobWiRjbGFzc25hbWVYJGNsYXNzZXNfEBNOU011dGFibGVEaWN0aW9uYXJ5oxocHVxOU0RpY3Rpb25hcnlYTlNPYmplY3QIERokKTI3SUxRU1lfZm55gIKEhoiKmJqfqrPJzdoAAAAAAAABAQAAAAAAAAAeAAAAAAAAAAAAAAAAAAAA4w==</data>
+                                        <param name="Look" key="1" value="11 (Video)"/>
+                                        <param name="Amount" key="2" value="50"/>
+                                        <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                        <param name="Ease Amount" key="51" value="0"/>
+                                    </filter-video>
+                                </transition>
+                                <video ref="r5" offset="0s" name="Aurora 2" start="3600s" duration="2995200/768000s"/>
+                                <transition name="Cross Dissolve" offset="2227200/768000s" duration="1s">
+                                    <filter-video ref="r2" name="Cross Dissolve">
+                                        <data key="effectConfig">YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGlCwwVFhdVJG51bGzTDQ4PEBIUV05TLmtleXNaTlMub2JqZWN0c1YkY2xhc3OhEYACoROAA4AEXXBsdWdpblZlcnNpb24QAdIYGRobWiRjbGFzc25hbWVYJGNsYXNzZXNfEBNOU011dGFibGVEaWN0aW9uYXJ5oxocHVxOU0RpY3Rpb25hcnlYTlNPYmplY3QIERokKTI3SUxRU1lfZm55gIKEhoiKmJqfqrPJzdoAAAAAAAABAQAAAAAAAAAeAAAAAAAAAAAAAAAAAAAA4w==</data>
+                                        <param name="Look" key="1" value="11 (Video)"/>
+                                        <param name="Amount" key="2" value="50"/>
+                                        <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                        <param name="Ease Amount" key="51" value="0"/>
+                                    </filter-video>
+                                </transition>
+                            </spine>
+                        </asset-clip>
+                        <transition name="Cross Dissolve" offset="382800/3000s" duration="1s">
+                            <filter-video ref="r2" name="Cross Dissolve">
+                                <data key="effectConfig">YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGlCwwVFhdVJG51bGzTDQ4PEBIUV05TLmtleXNaTlMub2JqZWN0c1YkY2xhc3OhEYACoROAA4AEXXBsdWdpblZlcnNpb24QAdIYGRobWiRjbGFzc25hbWVYJGNsYXNzZXNfEBNOU011dGFibGVEaWN0aW9uYXJ5oxocHVxOU0RpY3Rpb25hcnlYTlNPYmplY3QIERokKTI3SUxRU1lfZm55gIKEhoiKmJqfqrPJzdoAAAAAAAABAQAAAAAAAAAeAAAAAAAAAAAAAAAAAAAA4w==</data>
+                                <param name="Look" key="1" value="11 (Video)"/>
+                                <param name="Amount" key="2" value="50"/>
+                                <param name="Ease" key="50" value="2 (In &amp; Out)"/>
+                                <param name="Ease Amount" key="51" value="0"/>
+                            </filter-video>
+                            <filter-audio ref="r3" name="Audio Crossfade"/>
+                        </transition>
+                    </spine>
+                </sequence>
+            </project>
+        </event>
+        <smart-collection name="Projects" match="all">
+            <match-clip rule="is" type="project"/>
+        </smart-collection>
+        <smart-collection name="All Video" match="any">
+            <match-media rule="is" type="videoOnly"/>
+            <match-media rule="is" type="videoWithAudio"/>
+        </smart-collection>
+        <smart-collection name="Audio Only" match="all">
+            <match-media rule="is" type="audioOnly"/>
+        </smart-collection>
+        <smart-collection name="Stills" match="all">
+            <match-media rule="is" type="stills"/>
+        </smart-collection>
+        <smart-collection name="Favorites" match="all">
+            <match-ratings value="favorites"/>
+        </smart-collection>
+    </library>
+</fcpxml>

@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+
+<fcpxml version="1.13">
+    <resources>
+        <format id="r1" name="FFVideoFormat720p30" frameDuration="100/3000s" width="1280" height="720" colorSpace="1-1-1 (Rec. 709)"/>
+        <asset id="r2" name="VeryFX!" uid="8591222954977263449B5F16502C3A69" start="0s" duration="4139136/44100s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="44100">
+            <media-rep kind="original-media" sig="8591222954977263449B5F16502C3A69" src="file:///Volumes/VideoMedia/VG-8%20Demo/VG-8%20Demo.fcpbundle/VG-8%20Audio/Original%20Media/VeryFX!.mp3">
+                <bookmark>Ym9va2gEAAAAAAQQMAAAAFM7sYwZeQPqZhv5Qj/Na+uESoDD0FXn2FnF7mWPVMHuiAMAAAQAAAADAwAAABgAKAcAAAABAQAAVm9sdW1lcwAKAAAAAQEAAFZpZGVvTWVkaWEAAAkAAAABAQAAVkctOCBEZW1vAAAAEwAAAAEBAABWRy04IERlbW8uZmNwYnVuZGxlAAoAAAABAQAAVkctOCBBdWRpbwAADgAAAAEBAABPcmlnaW5hbCBNZWRpYQAACwAAAAEBAABWZXJ5RlghLm1wMwAcAAAAAQYAABAAAAAgAAAANAAAAEgAAABkAAAAeAAAAJAAAAAIAAAABAMAAKRCAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAA6lUAAAAAAAAIAAAABAMAAPxVAAAAAAAACAAAAAQDAAAaVgAAAAAAAAgAAAAEAwAAHlYAAAAAAAAIAAAABAMAAC9WAAAAAAAAHAAAAAEGAADIAAAA2AAAAOgAAAD4AAAACAEAABgBAAAoAQAACAAAAAAEAABBxuKWooAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAAGwAAAAEJAABmaWxlOi8vL1ZvbHVtZXMvVmlkZW9NZWRpYS8ACAAAAAQDAAAAwPx0owMAAAgAAAAABAAAQcbboqn55vokAAAAAQEAAEVEMEE3RDc3LUU4NDYtNEU4NC1COTRGLUNEQTYzQkZDQjU4NRgAAAABAgAAAQEAAAEAAADvEwAAAQAAAAAAAAAAAAAAEwAAAAEBAAAvVm9sdW1lcy9WaWRlb01lZGlhAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAJCClucAAAAIAAAAAAQAAEHG1RdMgAAAJAAAAAEBAABGREQ2M0NDNi0zMEQ2LTRDNTYtQjhBNy1FOTMwMTE0NTBCREEYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAMgCAAAAAAAABSAAADgCAAAAAAAAECAAAEgCAAAAAAAAESAAAHwCAAAAAAAAEiAAAFwCAAAAAAAAEyAAAGwCAAAAAAAAICAAAKgCAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAIAAAAAEGAAA8AwAASAMAAFQDAABIAwAASAMAAEgDAABIAwAASAMAAKgAAAD+////AQAAANQCAAANAAAABBAAAKQAAAAAAAAABRAAADgBAAAAAAAAEBAAAGwBAAAAAAAAQBAAAFwBAAAAAAAAACAAAGADAAAAAAAAAiAAABwCAAAAAAAABSAAAIwBAAAAAAAAECAAACAAAAAAAAAAESAAANABAAAAAAAAEiAAALABAAAAAAAAEyAAAMABAAAAAAAAICAAAPwBAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+            </media-rep>
+            <metadata>
+                <md key="com.apple.proapps.mio.ingestDate" value="2025-05-05 13:12:19 -0400"/>
+            </metadata>
+        </asset>
+        <asset id="r3" name="Music City1" uid="FA215DE4A4067F1B81903EC350830D32" start="0s" duration="0s" hasVideo="1" format="r4" videoSources="1">
+            <media-rep kind="original-media" sig="FA215DE4A4067F1B81903EC350830D32" src="file:///Volumes/VideoMedia/VG-8%20Demo/VG-8%20Demo.fcpbundle/Visuals/Original%20Media/Music%20City1.jpg">
+                <bookmark>Ym9va2gEAAAAAAQQMAAAAFWD+VoGCksfcZ8DQ5fW+UcBO6+ZM2uSD8/z6yf+Jzm5iAMAAAQAAAADAwAAABgAKAcAAAABAQAAVm9sdW1lcwAKAAAAAQEAAFZpZGVvTWVkaWEAAAkAAAABAQAAVkctOCBEZW1vAAAAEwAAAAEBAABWRy04IERlbW8uZmNwYnVuZGxlAAcAAAABAQAAVmlzdWFscwAOAAAAAQEAAE9yaWdpbmFsIE1lZGlhAAAPAAAAAQEAAE11c2ljIENpdHkxLmpwZwAcAAAAAQYAABAAAAAgAAAANAAAAEgAAABkAAAAdAAAAIwAAAAIAAAABAMAAKRCAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAA6lUAAAAAAAAIAAAABAMAAPxVAAAAAAAACAAAAAQDAAAqWAAAAAAAAAgAAAAEAwAALlgAAAAAAAAIAAAABAMAADhYAAAAAAAAHAAAAAEGAADIAAAA2AAAAOgAAAD4AAAACAEAABgBAAAoAQAACAAAAAAEAABBxuKWygAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAAGwAAAAEJAABmaWxlOi8vL1ZvbHVtZXMvVmlkZW9NZWRpYS8ACAAAAAQDAAAAwPx0owMAAAgAAAAABAAAQcbboqn55vokAAAAAQEAAEVEMEE3RDc3LUU4NDYtNEU4NC1COTRGLUNEQTYzQkZDQjU4NRgAAAABAgAAAQEAAAEAAADvEwAAAQAAAAAAAAAAAAAAEwAAAAEBAAAvVm9sdW1lcy9WaWRlb01lZGlhAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAJCClucAAAAIAAAAAAQAAEHG1RdMgAAAJAAAAAEBAABGREQ2M0NDNi0zMEQ2LTRDNTYtQjhBNy1FOTMwMTE0NTBCREEYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAMgCAAAAAAAABSAAADgCAAAAAAAAECAAAEgCAAAAAAAAESAAAHwCAAAAAAAAEiAAAFwCAAAAAAAAEyAAAGwCAAAAAAAAICAAAKgCAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAIAAAAAEGAAA8AwAASAMAAFQDAABIAwAASAMAAEgDAABIAwAASAMAAKgAAAD+////AQAAANQCAAANAAAABBAAAKQAAAAAAAAABRAAADgBAAAAAAAAEBAAAGwBAAAAAAAAQBAAAFwBAAAAAAAAACAAAGADAAAAAAAAAiAAABwCAAAAAAAABSAAAIwBAAAAAAAAECAAACAAAAAAAAAAESAAANABAAAAAAAAEiAAALABAAAAAAAAEyAAAMABAAAAAAAAICAAAPwBAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+            </media-rep>
+            <metadata>
+                <md key="com.apple.proapps.mio.cameraName" value="Lumia 920"/>
+                <md key="com.apple.proapps.studio.rawToLogConversion" value="0"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="sRGB IEC61966-2.1"/>
+                <md key="com.apple.proapps.studio.cameraISO" value="0"/>
+                <md key="com.apple.proapps.studio.cameraColorTemperature" value="0"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2025-05-05 22:45:10 -0400"/>
+                <md key="com.apple.proapps.exif.{Exif}.ISOSpeedRatings" value="640"/>
+                <md key="com.apple.proapps.exif.{Exif}.ExposureBiasValue" value="0"/>
+                <md key="com.apple.proapps.spotlight.kMDItemOrientation" value="1"/>
+            </metadata>
+        </asset>
+        <format id="r4" name="FFVideoFormatRateUndefined" width="2000" height="3552" colorSpace="1-13-1"/>
+        <effect id="r5" name="Lower Third" uid=".../Titles.localized/Dynamic Titles.localized/Geometric.localized/Lower Third.localized/Lower Third.moti"/>
+        <asset id="r6" name="BowedPad" uid="7D04928DF4E98781A1A64A565999A7C9" start="0s" duration="3284352/44100s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="44100">
+            <media-rep kind="original-media" sig="7D04928DF4E98781A1A64A565999A7C9" src="file:///Volumes/VideoMedia/VG-8%20Demo/VG-8%20Demo.fcpbundle/VG-8%20Audio/Original%20Media/BowedPad.mp3">
+                <bookmark>Ym9va2gEAAAAAAQQMAAAAPIW8vphUwoFpouDvFyl6765hREv6bXYBDsnstEKeTAriAMAAAQAAAADAwAAABgAKAcAAAABAQAAVm9sdW1lcwAKAAAAAQEAAFZpZGVvTWVkaWEAAAkAAAABAQAAVkctOCBEZW1vAAAAEwAAAAEBAABWRy04IERlbW8uZmNwYnVuZGxlAAoAAAABAQAAVkctOCBBdWRpbwAADgAAAAEBAABPcmlnaW5hbCBNZWRpYQAADAAAAAEBAABCb3dlZFBhZC5tcDMcAAAAAQYAABAAAAAgAAAANAAAAEgAAABkAAAAeAAAAJAAAAAIAAAABAMAAKRCAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAA6lUAAAAAAAAIAAAABAMAAPxVAAAAAAAACAAAAAQDAAAaVgAAAAAAAAgAAAAEAwAAHlYAAAAAAAAIAAAABAMAADFWAAAAAAAAHAAAAAEGAADIAAAA2AAAAOgAAAD4AAAACAEAABgBAAAoAQAACAAAAAAEAABBxuKWooAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAAGwAAAAEJAABmaWxlOi8vL1ZvbHVtZXMvVmlkZW9NZWRpYS8ACAAAAAQDAAAAwPx0owMAAAgAAAAABAAAQcbboqn55vokAAAAAQEAAEVEMEE3RDc3LUU4NDYtNEU4NC1COTRGLUNEQTYzQkZDQjU4NRgAAAABAgAAAQEAAAEAAADvEwAAAQAAAAAAAAAAAAAAEwAAAAEBAAAvVm9sdW1lcy9WaWRlb01lZGlhAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAJCClucAAAAIAAAAAAQAAEHG1RdMgAAAJAAAAAEBAABGREQ2M0NDNi0zMEQ2LTRDNTYtQjhBNy1FOTMwMTE0NTBCREEYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAMgCAAAAAAAABSAAADgCAAAAAAAAECAAAEgCAAAAAAAAESAAAHwCAAAAAAAAEiAAAFwCAAAAAAAAEyAAAGwCAAAAAAAAICAAAKgCAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAIAAAAAEGAAA8AwAASAMAAFQDAABIAwAASAMAAEgDAABIAwAASAMAAKgAAAD+////AQAAANQCAAANAAAABBAAAKQAAAAAAAAABRAAADgBAAAAAAAAEBAAAGwBAAAAAAAAQBAAAFwBAAAAAAAAACAAAGADAAAAAAAAAiAAABwCAAAAAAAABSAAAIwBAAAAAAAAECAAACAAAAAAAAAAESAAANABAAAAAAAAEiAAALABAAAAAAAAEyAAAMABAAAAAAAAICAAAPwBAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+            </media-rep>
+            <metadata>
+                <md key="com.apple.proapps.mio.ingestDate" value="2025-05-05 13:12:19 -0400"/>
+            </metadata>
+        </asset>
+        <asset id="r7" name="VG-8 Pic1" uid="A1C39BB5886FFD18C1CF5082C591A37E" start="0s" duration="0s" hasVideo="1" format="r8" videoSources="1">
+            <media-rep kind="original-media" sig="A1C39BB5886FFD18C1CF5082C591A37E" src="file:///Volumes/VideoMedia/VG-8%20Demo/VG-8%20Demo.fcpbundle/Visuals/Original%20Media/VG-8%20Pic1.jpg">
+                <bookmark>Ym9va2gEAAAAAAQQMAAAAJoY3Suz5wB/jm7ApVF7lPf9duKhJF1vo6YkiGVUEzp/iAMAAAQAAAADAwAAABgAKAcAAAABAQAAVm9sdW1lcwAKAAAAAQEAAFZpZGVvTWVkaWEAAAkAAAABAQAAVkctOCBEZW1vAAAAEwAAAAEBAABWRy04IERlbW8uZmNwYnVuZGxlAAcAAAABAQAAVmlzdWFscwAOAAAAAQEAAE9yaWdpbmFsIE1lZGlhAAANAAAAAQEAAFZHLTggUGljMS5qcGcAAAAcAAAAAQYAABAAAAAgAAAANAAAAEgAAABkAAAAdAAAAIwAAAAIAAAABAMAAKRCAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAA6lUAAAAAAAAIAAAABAMAAPxVAAAAAAAACAAAAAQDAAAqWAAAAAAAAAgAAAAEAwAALlgAAAAAAAAIAAAABAMAADlYAAAAAAAAHAAAAAEGAADIAAAA2AAAAOgAAAD4AAAACAEAABgBAAAoAQAACAAAAAAEAABBxuSZNR81SRgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAAGwAAAAEJAABmaWxlOi8vL1ZvbHVtZXMvVmlkZW9NZWRpYS8ACAAAAAQDAAAAwPx0owMAAAgAAAAABAAAQcbboqn55vokAAAAAQEAAEVEMEE3RDc3LUU4NDYtNEU4NC1COTRGLUNEQTYzQkZDQjU4NRgAAAABAgAAAQEAAAEAAADvEwAAAQAAAAAAAAAAAAAAEwAAAAEBAAAvVm9sdW1lcy9WaWRlb01lZGlhAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAJCClucAAAAIAAAAAAQAAEHG1RdMgAAAJAAAAAEBAABGREQ2M0NDNi0zMEQ2LTRDNTYtQjhBNy1FOTMwMTE0NTBCREEYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAMgCAAAAAAAABSAAADgCAAAAAAAAECAAAEgCAAAAAAAAESAAAHwCAAAAAAAAEiAAAFwCAAAAAAAAEyAAAGwCAAAAAAAAICAAAKgCAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAIAAAAAEGAAA8AwAASAMAAFQDAABIAwAASAMAAEgDAABIAwAASAMAAKgAAAD+////AQAAANQCAAANAAAABBAAAKQAAAAAAAAABRAAADgBAAAAAAAAEBAAAGwBAAAAAAAAQBAAAFwBAAAAAAAAACAAAGADAAAAAAAAAiAAABwCAAAAAAAABSAAAIwBAAAAAAAAECAAACAAAAAAAAAAESAAANABAAAAAAAAEiAAALABAAAAAAAAEyAAAMABAAAAAAAAICAAAPwBAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+            </media-rep>
+            <metadata>
+                <md key="com.apple.proapps.studio.rawToLogConversion" value="0"/>
+                <md key="com.apple.proapps.spotlight.kMDItemProfileName" value="sRGB IEC61966-2.1"/>
+                <md key="com.apple.proapps.studio.cameraISO" value="0"/>
+                <md key="com.apple.proapps.studio.cameraColorTemperature" value="0"/>
+                <md key="com.apple.proapps.mio.ingestDate" value="2025-05-05 22:45:10 -0400"/>
+                <md key="com.apple.proapps.spotlight.kMDItemOrientation" value="0"/>
+            </metadata>
+        </asset>
+        <format id="r8" name="FFVideoFormatRateUndefined" width="1280" height="960" colorSpace="1-13-1"/>
+        <asset id="r9" name="Breathee" uid="C8AD3608A95A0EFC5613932DD2AC41FB" start="0s" duration="2044800/44100s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="44100">
+            <media-rep kind="original-media" sig="C8AD3608A95A0EFC5613932DD2AC41FB" src="file:///Volumes/VideoMedia/VG-8%20Demo/VG-8%20Demo.fcpbundle/VG-8%20Audio/Original%20Media/Breathee.mp3">
+                <bookmark>Ym9va2gEAAAAAAQQMAAAACVm1hQNUFbbYX2HUIwcf+mFmjYGHpCjGzkLZbNKjl7diAMAAAQAAAADAwAAABgAKAcAAAABAQAAVm9sdW1lcwAKAAAAAQEAAFZpZGVvTWVkaWEAAAkAAAABAQAAVkctOCBEZW1vAAAAEwAAAAEBAABWRy04IERlbW8uZmNwYnVuZGxlAAoAAAABAQAAVkctOCBBdWRpbwAADgAAAAEBAABPcmlnaW5hbCBNZWRpYQAADAAAAAEBAABCcmVhdGhlZS5tcDMcAAAAAQYAABAAAAAgAAAANAAAAEgAAABkAAAAeAAAAJAAAAAIAAAABAMAAKRCAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAA6lUAAAAAAAAIAAAABAMAAPxVAAAAAAAACAAAAAQDAAAaVgAAAAAAAAgAAAAEAwAAHlYAAAAAAAAIAAAABAMAADNWAAAAAAAAHAAAAAEGAADIAAAA2AAAAOgAAAD4AAAACAEAABgBAAAoAQAACAAAAAAEAABBxuKWooAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAAGwAAAAEJAABmaWxlOi8vL1ZvbHVtZXMvVmlkZW9NZWRpYS8ACAAAAAQDAAAAwPx0owMAAAgAAAAABAAAQcbboqn55vokAAAAAQEAAEVEMEE3RDc3LUU4NDYtNEU4NC1COTRGLUNEQTYzQkZDQjU4NRgAAAABAgAAAQEAAAEAAADvEwAAAQAAAAAAAAAAAAAAEwAAAAEBAAAvVm9sdW1lcy9WaWRlb01lZGlhAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAJCClucAAAAIAAAAAAQAAEHG1RdMgAAAJAAAAAEBAABGREQ2M0NDNi0zMEQ2LTRDNTYtQjhBNy1FOTMwMTE0NTBCREEYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAMgCAAAAAAAABSAAADgCAAAAAAAAECAAAEgCAAAAAAAAESAAAHwCAAAAAAAAEiAAAFwCAAAAAAAAEyAAAGwCAAAAAAAAICAAAKgCAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAIAAAAAEGAAA8AwAASAMAAFQDAABIAwAASAMAAEgDAABIAwAASAMAAKgAAAD+////AQAAANQCAAANAAAABBAAAKQAAAAAAAAABRAAADgBAAAAAAAAEBAAAGwBAAAAAAAAQBAAAFwBAAAAAAAAACAAAGADAAAAAAAAAiAAABwCAAAAAAAABSAAAIwBAAAAAAAAECAAACAAAAAAAAAAESAAANABAAAAAAAAEiAAALABAAAAAAAAEyAAAMABAAAAAAAAICAAAPwBAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+            </media-rep>
+            <metadata>
+                <md key="com.apple.proapps.mio.ingestDate" value="2025-05-05 13:12:19 -0400"/>
+            </metadata>
+        </asset>
+        <asset id="r10" name="Crystal" uid="2E2E092BDBC9F3D78FA238802AED7D9D" start="0s" duration="1481472/44100s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="44100">
+            <media-rep kind="original-media" sig="2E2E092BDBC9F3D78FA238802AED7D9D" src="file:///Volumes/VideoMedia/VG-8%20Demo/VG-8%20Demo.fcpbundle/VG-8%20Audio/Original%20Media/Crystal.mp3">
+                <bookmark>Ym9va2gEAAAAAAQQMAAAAOF6VWcs8/wro/SKLUlEon0t6fXZM04ZEBJEd8TneqZYiAMAAAQAAAADAwAAABgAKAcAAAABAQAAVm9sdW1lcwAKAAAAAQEAAFZpZGVvTWVkaWEAAAkAAAABAQAAVkctOCBEZW1vAAAAEwAAAAEBAABWRy04IERlbW8uZmNwYnVuZGxlAAoAAAABAQAAVkctOCBBdWRpbwAADgAAAAEBAABPcmlnaW5hbCBNZWRpYQAACwAAAAEBAABDcnlzdGFsLm1wMwAcAAAAAQYAABAAAAAgAAAANAAAAEgAAABkAAAAeAAAAJAAAAAIAAAABAMAAKRCAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAA6lUAAAAAAAAIAAAABAMAAPxVAAAAAAAACAAAAAQDAAAaVgAAAAAAAAgAAAAEAwAAHlYAAAAAAAAIAAAABAMAADBWAAAAAAAAHAAAAAEGAADIAAAA2AAAAOgAAAD4AAAACAEAABgBAAAoAQAACAAAAAAEAABBxuKWooAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAAGwAAAAEJAABmaWxlOi8vL1ZvbHVtZXMvVmlkZW9NZWRpYS8ACAAAAAQDAAAAwPx0owMAAAgAAAAABAAAQcbboqn55vokAAAAAQEAAEVEMEE3RDc3LUU4NDYtNEU4NC1COTRGLUNEQTYzQkZDQjU4NRgAAAABAgAAAQEAAAEAAADvEwAAAQAAAAAAAAAAAAAAEwAAAAEBAAAvVm9sdW1lcy9WaWRlb01lZGlhAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAJCClucAAAAIAAAAAAQAAEHG1RdMgAAAJAAAAAEBAABGREQ2M0NDNi0zMEQ2LTRDNTYtQjhBNy1FOTMwMTE0NTBCREEYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAMgCAAAAAAAABSAAADgCAAAAAAAAECAAAEgCAAAAAAAAESAAAHwCAAAAAAAAEiAAAFwCAAAAAAAAEyAAAGwCAAAAAAAAICAAAKgCAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAIAAAAAEGAAA8AwAASAMAAFQDAABIAwAASAMAAEgDAABIAwAASAMAAKgAAAD+////AQAAANQCAAANAAAABBAAAKQAAAAAAAAABRAAADgBAAAAAAAAEBAAAGwBAAAAAAAAQBAAAFwBAAAAAAAAACAAAGADAAAAAAAAAiAAABwCAAAAAAAABSAAAIwBAAAAAAAAECAAACAAAAAAAAAAESAAANABAAAAAAAAEiAAALABAAAAAAAAEyAAAMABAAAAAAAAICAAAPwBAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+            </media-rep>
+            <metadata>
+                <md key="com.apple.proapps.mio.ingestDate" value="2025-05-05 13:12:19 -0400"/>
+            </metadata>
+        </asset>
+        <asset id="r11" name="D50Breth" uid="3435C86F4D7E19FDFA3FC4CEED3BB668" start="0s" duration="4238208/44100s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="44100">
+            <media-rep kind="original-media" sig="3435C86F4D7E19FDFA3FC4CEED3BB668" src="file:///Volumes/VideoMedia/VG-8%20Demo/VG-8%20Demo.fcpbundle/VG-8%20Audio/Original%20Media/D50Breth.mp3">
+                <bookmark>Ym9va2gEAAAAAAQQMAAAAOXIj7X7u9HmOaudFIcNEuMYClT1EdYTAVbnh/rVmrDKiAMAAAQAAAADAwAAABgAKAcAAAABAQAAVm9sdW1lcwAKAAAAAQEAAFZpZGVvTWVkaWEAAAkAAAABAQAAVkctOCBEZW1vAAAAEwAAAAEBAABWRy04IERlbW8uZmNwYnVuZGxlAAoAAAABAQAAVkctOCBBdWRpbwAADgAAAAEBAABPcmlnaW5hbCBNZWRpYQAADAAAAAEBAABENTBCcmV0aC5tcDMcAAAAAQYAABAAAAAgAAAANAAAAEgAAABkAAAAeAAAAJAAAAAIAAAABAMAAKRCAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAA6lUAAAAAAAAIAAAABAMAAPxVAAAAAAAACAAAAAQDAAAaVgAAAAAAAAgAAAAEAwAAHlYAAAAAAAAIAAAABAMAADVWAAAAAAAAHAAAAAEGAADIAAAA2AAAAOgAAAD4AAAACAEAABgBAAAoAQAACAAAAAAEAABBxuKWooAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAAGwAAAAEJAABmaWxlOi8vL1ZvbHVtZXMvVmlkZW9NZWRpYS8ACAAAAAQDAAAAwPx0owMAAAgAAAAABAAAQcbboqn55vokAAAAAQEAAEVEMEE3RDc3LUU4NDYtNEU4NC1COTRGLUNEQTYzQkZDQjU4NRgAAAABAgAAAQEAAAEAAADvEwAAAQAAAAAAAAAAAAAAEwAAAAEBAAAvVm9sdW1lcy9WaWRlb01lZGlhAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAJCClucAAAAIAAAAAAQAAEHG1RdMgAAAJAAAAAEBAABGREQ2M0NDNi0zMEQ2LTRDNTYtQjhBNy1FOTMwMTE0NTBCREEYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAMgCAAAAAAAABSAAADgCAAAAAAAAECAAAEgCAAAAAAAAESAAAHwCAAAAAAAAEiAAAFwCAAAAAAAAEyAAAGwCAAAAAAAAICAAAKgCAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAIAAAAAEGAAA8AwAASAMAAFQDAABIAwAASAMAAEgDAABIAwAASAMAAKgAAAD+////AQAAANQCAAANAAAABBAAAKQAAAAAAAAABRAAADgBAAAAAAAAEBAAAGwBAAAAAAAAQBAAAFwBAAAAAAAAACAAAGADAAAAAAAAAiAAABwCAAAAAAAABSAAAIwBAAAAAAAAECAAACAAAAAAAAAAESAAANABAAAAAAAAEiAAALABAAAAAAAAEyAAAMABAAAAAAAAICAAAPwBAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+            </media-rep>
+            <metadata>
+                <md key="com.apple.proapps.mio.ingestDate" value="2025-05-05 13:12:19 -0400"/>
+            </metadata>
+        </asset>
+        <asset id="r12" name="G-Steps" uid="A197D750A2D71CD3E4AE69CC32DE1D9F" start="0s" duration="1702656/44100s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="44100">
+            <media-rep kind="original-media" sig="A197D750A2D71CD3E4AE69CC32DE1D9F" src="file:///Volumes/VideoMedia/VG-8%20Demo/VG-8%20Demo.fcpbundle/VG-8%20Audio/Original%20Media/G-Steps.mp3">
+                <bookmark>Ym9va2gEAAAAAAQQMAAAADbzgnL6ytAFEBByLJfZXf21c7cA9QDKukmjXWl1ONI5iAMAAAQAAAADAwAAABgAKAcAAAABAQAAVm9sdW1lcwAKAAAAAQEAAFZpZGVvTWVkaWEAAAkAAAABAQAAVkctOCBEZW1vAAAAEwAAAAEBAABWRy04IERlbW8uZmNwYnVuZGxlAAoAAAABAQAAVkctOCBBdWRpbwAADgAAAAEBAABPcmlnaW5hbCBNZWRpYQAACwAAAAEBAABHLVN0ZXBzLm1wMwAcAAAAAQYAABAAAAAgAAAANAAAAEgAAABkAAAAeAAAAJAAAAAIAAAABAMAAKRCAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAA6lUAAAAAAAAIAAAABAMAAPxVAAAAAAAACAAAAAQDAAAaVgAAAAAAAAgAAAAEAwAAHlYAAAAAAAAIAAAABAMAADRWAAAAAAAAHAAAAAEGAADIAAAA2AAAAOgAAAD4AAAACAEAABgBAAAoAQAACAAAAAAEAABBxuKWooAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAAGwAAAAEJAABmaWxlOi8vL1ZvbHVtZXMvVmlkZW9NZWRpYS8ACAAAAAQDAAAAwPx0owMAAAgAAAAABAAAQcbboqn55vokAAAAAQEAAEVEMEE3RDc3LUU4NDYtNEU4NC1COTRGLUNEQTYzQkZDQjU4NRgAAAABAgAAAQEAAAEAAADvEwAAAQAAAAAAAAAAAAAAEwAAAAEBAAAvVm9sdW1lcy9WaWRlb01lZGlhAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAJCClucAAAAIAAAAAAQAAEHG1RdMgAAAJAAAAAEBAABGREQ2M0NDNi0zMEQ2LTRDNTYtQjhBNy1FOTMwMTE0NTBCREEYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAMgCAAAAAAAABSAAADgCAAAAAAAAECAAAEgCAAAAAAAAESAAAHwCAAAAAAAAEiAAAFwCAAAAAAAAEyAAAGwCAAAAAAAAICAAAKgCAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAIAAAAAEGAAA8AwAASAMAAFQDAABIAwAASAMAAEgDAABIAwAASAMAAKgAAAD+////AQAAANQCAAANAAAABBAAAKQAAAAAAAAABRAAADgBAAAAAAAAEBAAAGwBAAAAAAAAQBAAAFwBAAAAAAAAACAAAGADAAAAAAAAAiAAABwCAAAAAAAABSAAAIwBAAAAAAAAECAAACAAAAAAAAAAESAAANABAAAAAAAAEiAAALABAAAAAAAAEyAAAMABAAAAAAAAICAAAPwBAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+            </media-rep>
+            <metadata>
+                <md key="com.apple.proapps.mio.ingestDate" value="2025-05-05 13:12:19 -0400"/>
+            </metadata>
+        </asset>
+        <asset id="r13" name="Stay Pad" uid="B99886ED1F071B5EF4BD1BF152AF6286" start="0s" duration="2298240/44100s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="44100">
+            <media-rep kind="original-media" sig="B99886ED1F071B5EF4BD1BF152AF6286" src="file:///Volumes/VideoMedia/VG-8%20Demo/VG-8%20Demo.fcpbundle/VG-8%20Audio/Original%20Media/Stay%20Pad.mp3">
+                <bookmark>Ym9va2gEAAAAAAQQMAAAAKoRI3zwBdRppGZLupNbKZN/Ohpr6X8kTbxJMzE1EjMliAMAAAQAAAADAwAAABgAKAcAAAABAQAAVm9sdW1lcwAKAAAAAQEAAFZpZGVvTWVkaWEAAAkAAAABAQAAVkctOCBEZW1vAAAAEwAAAAEBAABWRy04IERlbW8uZmNwYnVuZGxlAAoAAAABAQAAVkctOCBBdWRpbwAADgAAAAEBAABPcmlnaW5hbCBNZWRpYQAADAAAAAEBAABTdGF5IFBhZC5tcDMcAAAAAQYAABAAAAAgAAAANAAAAEgAAABkAAAAeAAAAJAAAAAIAAAABAMAAKRCAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAA6lUAAAAAAAAIAAAABAMAAPxVAAAAAAAACAAAAAQDAAAaVgAAAAAAAAgAAAAEAwAAHlYAAAAAAAAIAAAABAMAAC5WAAAAAAAAHAAAAAEGAADIAAAA2AAAAOgAAAD4AAAACAEAABgBAAAoAQAACAAAAAAEAABBxuKWooAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAAGwAAAAEJAABmaWxlOi8vL1ZvbHVtZXMvVmlkZW9NZWRpYS8ACAAAAAQDAAAAwPx0owMAAAgAAAAABAAAQcbboqn55vokAAAAAQEAAEVEMEE3RDc3LUU4NDYtNEU4NC1COTRGLUNEQTYzQkZDQjU4NRgAAAABAgAAAQEAAAEAAADvEwAAAQAAAAAAAAAAAAAAEwAAAAEBAAAvVm9sdW1lcy9WaWRlb01lZGlhAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAJCClucAAAAIAAAAAAQAAEHG1RdMgAAAJAAAAAEBAABGREQ2M0NDNi0zMEQ2LTRDNTYtQjhBNy1FOTMwMTE0NTBCREEYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAMgCAAAAAAAABSAAADgCAAAAAAAAECAAAEgCAAAAAAAAESAAAHwCAAAAAAAAEiAAAFwCAAAAAAAAEyAAAGwCAAAAAAAAICAAAKgCAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAIAAAAAEGAAA8AwAASAMAAFQDAABIAwAASAMAAEgDAABIAwAASAMAAKgAAAD+////AQAAANQCAAANAAAABBAAAKQAAAAAAAAABRAAADgBAAAAAAAAEBAAAGwBAAAAAAAAQBAAAFwBAAAAAAAAACAAAGADAAAAAAAAAiAAABwCAAAAAAAABSAAAIwBAAAAAAAAECAAACAAAAAAAAAAESAAANABAAAAAAAAEiAAALABAAAAAAAAEyAAAMABAAAAAAAAICAAAPwBAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+            </media-rep>
+            <metadata>
+                <md key="com.apple.proapps.mio.ingestDate" value="2025-05-05 13:12:19 -0400"/>
+            </metadata>
+        </asset>
+        <asset id="r14" name="Vio-Orch" uid="A39C0459801E4B55CD658EE5FD9A1350" start="0s" duration="3515904/44100s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="44100">
+            <media-rep kind="original-media" sig="A39C0459801E4B55CD658EE5FD9A1350" src="file:///Volumes/VideoMedia/VG-8%20Demo/VG-8%20Demo.fcpbundle/VG-8%20Audio/Original%20Media/Vio-Orch.mp3">
+                <bookmark>Ym9va2gEAAAAAAQQMAAAAElEw5dwMtKZxhWuA6uqGSZG59+x3SyTdBOwXOUwZcm+iAMAAAQAAAADAwAAABgAKAcAAAABAQAAVm9sdW1lcwAKAAAAAQEAAFZpZGVvTWVkaWEAAAkAAAABAQAAVkctOCBEZW1vAAAAEwAAAAEBAABWRy04IERlbW8uZmNwYnVuZGxlAAoAAAABAQAAVkctOCBBdWRpbwAADgAAAAEBAABPcmlnaW5hbCBNZWRpYQAADAAAAAEBAABWaW8tT3JjaC5tcDMcAAAAAQYAABAAAAAgAAAANAAAAEgAAABkAAAAeAAAAJAAAAAIAAAABAMAAKRCAAAAAAAACAAAAAQDAAACAAAAAAAAAAgAAAAEAwAA6lUAAAAAAAAIAAAABAMAAPxVAAAAAAAACAAAAAQDAAAaVgAAAAAAAAgAAAAEAwAAHlYAAAAAAAAIAAAABAMAADJWAAAAAAAAHAAAAAEGAADIAAAA2AAAAOgAAAD4AAAACAEAABgBAAAoAQAACAAAAAAEAABBxuKWooAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAAGwAAAAEJAABmaWxlOi8vL1ZvbHVtZXMvVmlkZW9NZWRpYS8ACAAAAAQDAAAAwPx0owMAAAgAAAAABAAAQcbboqn55vokAAAAAQEAAEVEMEE3RDc3LUU4NDYtNEU4NC1COTRGLUNEQTYzQkZDQjU4NRgAAAABAgAAAQEAAAEAAADvEwAAAQAAAAAAAAAAAAAAEwAAAAEBAAAvVm9sdW1lcy9WaWRlb01lZGlhAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAJCClucAAAAIAAAAAAQAAEHG1RdMgAAAJAAAAAEBAABGREQ2M0NDNi0zMEQ2LTRDNTYtQjhBNy1FOTMwMTE0NTBCREEYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAGAAAAD+////APAAAAAAAAAHAAAAAiAAAMgCAAAAAAAABSAAADgCAAAAAAAAECAAAEgCAAAAAAAAESAAAHwCAAAAAAAAEiAAAFwCAAAAAAAAEyAAAGwCAAAAAAAAICAAAKgCAAAAAAAABAAAAAMDAAAA8AAABAAAAAMDAAAAAAAABAAAAAMDAAABAAAAIAAAAAEGAAA8AwAASAMAAFQDAABIAwAASAMAAEgDAABIAwAASAMAAKgAAAD+////AQAAANQCAAANAAAABBAAAKQAAAAAAAAABRAAADgBAAAAAAAAEBAAAGwBAAAAAAAAQBAAAFwBAAAAAAAAACAAAGADAAAAAAAAAiAAABwCAAAAAAAABSAAAIwBAAAAAAAAECAAACAAAAAAAAAAESAAANABAAAAAAAAEiAAALABAAAAAAAAEyAAAMABAAAAAAAAICAAAPwBAAAAAAAAENAAAAQAAAAAAAAA</bookmark>
+            </media-rep>
+            <metadata>
+                <md key="com.apple.proapps.mio.ingestDate" value="2025-05-05 13:12:19 -0400"/>
+            </metadata>
+        </asset>
+    </resources>
+    <library location="file:///Volumes/VideoMedia/VG-8%20Demo/VG-8%20Demo.fcpbundle/">
+        <event name="VG-8 Audio" uid="12006296-1E6E-4ABD-B9A8-828104859371">
+            <project name="VG-8 Selected Factory Presets Demos" uid="F858297F-16C6-47FB-A883-3EFD4F16C337" modDate="2025-05-06 12:56:14 -0400">
+                <sequence format="r1" duration="1544200/3000s" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                    <spine>
+                        <asset-clip ref="r2" offset="0s" name="VeryFX!" duration="281500/3000s" audioRole="dialogue">
+                            <adjust-volume amount="-1dB"/>
+                            <video ref="r3" lane="1" offset="0s" name="Music City1" start="3600s" duration="563200/6000s">
+                                <adjust-crop mode="trim">
+                                    <trim-rect top="8.41311"/>
+                                </adjust-crop>
+                                <adjust-conform type="fill"/>
+                                <adjust-transform>
+                                    <param name="anchor">
+                                        <keyframeAnimation>
+                                            <keyframe time="10862200/3000s" value="0 0" curve="linear"/>
+                                        </keyframeAnimation>
+                                    </param>
+                                    <param name="position">
+                                        <keyframeAnimation>
+                                            <keyframe time="3600s" value="-0.819348 -119.631"/>
+                                            <keyframe time="10862200/3000s" value="-2.06019 87.2791"/>
+                                            <keyframe time="10962100/3000s" value="-23.4611 204.103"/>
+                                            <keyframe time="11007200/3000s" value="20.041 114.331"/>
+                                            <keyframe time="11035200/3000s" value="90.9766 -197.924"/>
+                                            <keyframe time="11038200/3000s" value="1.84462 100.004"/>
+                                        </keyframeAnimation>
+                                    </param>
+                                    <param name="rotation">
+                                        <keyframeAnimation>
+                                            <keyframe time="10862200/3000s" value="0"/>
+                                            <keyframe time="11007200/3000s" value="0"/>
+                                            <keyframe time="11035200/3000s" value="-164.543"/>
+                                            <keyframe time="11038200/3000s" value="0"/>
+                                        </keyframeAnimation>
+                                    </param>
+                                    <param name="scale">
+                                        <keyframeAnimation>
+                                            <keyframe time="10862200/3000s" value="1.29 1.29"/>
+                                            <keyframe time="10962100/3000s" value="2.31 2.31"/>
+                                            <keyframe time="11007200/3000s" value="1.78 1.78"/>
+                                            <keyframe time="11035200/3000s" value="2.93 2.93"/>
+                                            <keyframe time="11038200/3000s" value="1.28 1.28"/>
+                                        </keyframeAnimation>
+                                    </param>
+                                </adjust-transform>
+                                <chapter-marker start="3600s" duration="100/3000s" value="VeryFX!" posterOffset="-601782/720000s"/>
+                            </video>
+                            <title ref="r5" lane="2" offset="0s" name="VeryFX! - Lower Third" start="3600s" duration="72089600/768000s">
+                                <param name="Position" key="9999/3190682472/3190524681/3190522507/1/100/101" value="-1399.24 -665.753"/>
+                                <param name="Scale" key="9999/3190682472/3190524681/3190522507/1/100/105">
+                                    <keyframeAnimation>
+                                        <keyframe time="92160/153600s" value="1.77 1.77"/>
+                                        <keyframe time="360960/153600s" value="1 1"/>
+                                    </keyframeAnimation>
+                                </param>
+                                <param name="Anchor Point" key="9999/3190682472/3190524681/3190522507/1/100/107" value="-1781.19 -277.553"/>
+                                <param name="Layout Method" key="9999/3190682472/3190524681/3190522507/2/314" value="1 (Paragraph)"/>
+                                <param name="Left Margin" key="9999/3190682472/3190524681/3190522507/2/323" value="-1800"/>
+                                <param name="Right Margin" key="9999/3190682472/3190524681/3190522507/2/324" value="1319.01"/>
+                                <param name="Top Margin" key="9999/3190682472/3190524681/3190522507/2/325" value="-62.8619"/>
+                                <param name="Bottom Margin" key="9999/3190682472/3190524681/3190522507/2/326" value="-444.034"/>
+                                <param name="Line Spacing" key="9999/3190682472/3190524681/3190522507/2/354/3190522508/404" value="-86.7"/>
+                                <param name="Auto-Shrink" key="9999/3190682472/3190524681/3190522507/2/370" value="3 (To All Margins)"/>
+                                <param name="Alignment" key="9999/3190682472/3190524681/3190522507/2/373" value="0 (Left) 2 (Bottom)"/>
+                                <param name="Position" key="9999/3190682472/3190524681/3190522507/4/3190522511/1000/1001" value="0 -136.113"/>
+                                <param name="Animate" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/203" value="2 (Word)"/>
+                                <param name="Spread" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/204" value="5"/>
+                                <param name="Speed" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/208" value="6 (Custom)"/>
+                                <param name="Custom Speed" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/209">
+                                    <keyframeAnimation>
+                                        <keyframe time="-33280/153600s" value="0"/>
+                                        <keyframe time="122880/153600s" value="1"/>
+                                    </keyframeAnimation>
+                                </param>
+                                <param name="Minimum" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/220/215" value="0"/>
+                                <param name="Noisiness" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/220/222" value="0.41"/>
+                                <param name="Position Type" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/227" value="1 (Relative)"/>
+                                <param name="Color" key="9999/3190682472/3190524681/3190522507/5/3190522514/14/16" value="0.571892 0.914105 0.37683"/>
+                                <param name="Wrap Mode" key="9999/3190682472/3190524681/3190522507/5/3190522514/14/18/5" value="1 (Repeat)"/>
+                                <text>
+                                    <text-style ref="ts1">VeryFX</text-style>
+                                    <text-style ref="ts2">!</text-style>
+                                </text>
+                                <text-style-def id="ts1">
+                                    <text-style font="Avenir Next" fontSize="166" fontColor="0.513726 0.913725 0.305882 1" bold="1" kerning="-4.0338" lineSpacing="-86.7">
+                                        <param name="MotionSimpleValues" key="MotionTextStyle:SimpleValues">
+                                            <param name="motionTextTracking" key="tracking" value="-4.0338"/>
+                                        </param>
+                                    </text-style>
+                                </text-style-def>
+                                <text-style-def id="ts2">
+                                    <text-style font="Avenir Next" fontSize="166" fontColor="0.513726 0.913725 0.305882 1" bold="1" lineSpacing="-86.7"/>
+                                </text-style-def>
+                            </title>
+                        </asset-clip>
+                        <asset-clip ref="r6" offset="281500/3000s" name="BowedPad" duration="223400/3000s" audioRole="dialogue">
+                            <video ref="r7" lane="1" offset="200/6000s" name="VG-8 Pic1" start="3600s" duration="446600/6000s">
+                                <chapter-marker start="3600s" duration="100/3000s" value="BowedPad" posterOffset="11/30s"/>
+                            </video>
+                            <title ref="r5" lane="2" offset="100/3000s" name="BowedPad - Lower Third" start="3600s" duration="57164800/768000s">
+                                <param name="Custom Color 1" key="9999/3190682472/3190523205/3190532462/3190523301/2/353/113/111">
+                                    <keyframeAnimation>
+                                        <keyframe time="10934000/3000s" value="0.886564 0.961275 0.387998"/>
+                                        <keyframe time="10946900/3000s" value="0.980435 0.534373 0.572673"/>
+                                        <keyframe time="2633232000/720000s" value="0.980435 0.9 0"/>
+                                    </keyframeAnimation>
+                                </param>
+                                <param name="Position" key="9999/3190682472/3190524681/3190522507/1/100/101" value="-1399.24 -665.753"/>
+                                <param name="Scale" key="9999/3190682472/3190524681/3190522507/1/100/105">
+                                    <keyframeAnimation>
+                                        <keyframe time="92160/153600s" value="1.77 1.77"/>
+                                        <keyframe time="360960/153600s" value="1 1"/>
+                                    </keyframeAnimation>
+                                </param>
+                                <param name="Anchor Point" key="9999/3190682472/3190524681/3190522507/1/100/107" value="-1781.19 -277.553"/>
+                                <param name="Layout Method" key="9999/3190682472/3190524681/3190522507/2/314" value="1 (Paragraph)"/>
+                                <param name="Left Margin" key="9999/3190682472/3190524681/3190522507/2/323" value="-1800"/>
+                                <param name="Right Margin" key="9999/3190682472/3190524681/3190522507/2/324" value="1319.01"/>
+                                <param name="Top Margin" key="9999/3190682472/3190524681/3190522507/2/325" value="-62.8619"/>
+                                <param name="Bottom Margin" key="9999/3190682472/3190524681/3190522507/2/326" value="-444.034"/>
+                                <param name="Line Spacing" key="9999/3190682472/3190524681/3190522507/2/354/3190522508/404" value="-86.7"/>
+                                <param name="Auto-Shrink" key="9999/3190682472/3190524681/3190522507/2/370" value="3 (To All Margins)"/>
+                                <param name="Alignment" key="9999/3190682472/3190524681/3190522507/2/373" value="0 (Left) 2 (Bottom)"/>
+                                <param name="Position" key="9999/3190682472/3190524681/3190522507/4/3190522511/1000/1001" value="0 -136.113"/>
+                                <param name="Animate" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/203" value="2 (Word)"/>
+                                <param name="Spread" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/204" value="5"/>
+                                <param name="Speed" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/208" value="6 (Custom)"/>
+                                <param name="Custom Speed" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/209">
+                                    <keyframeAnimation>
+                                        <keyframe time="-33280/153600s" value="0"/>
+                                        <keyframe time="122880/153600s" value="1"/>
+                                    </keyframeAnimation>
+                                </param>
+                                <param name="Minimum" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/220/215" value="0"/>
+                                <param name="Noisiness" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/220/222" value="0.41"/>
+                                <param name="Position Type" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/227" value="1 (Relative)"/>
+                                <param name="Fill with" key="9999/3190682472/3190524681/3190522507/5/3190522514/14/15" value="1 (Gradient)"/>
+                                <param name="Color" key="9999/3190682472/3190524681/3190522507/5/3190522514/14/16" value="0.528252 0.847778 0.343107"/>
+                                <param name="Color" key="9999/3190682472/3190524681/3190522507/5/3190522514/38/40" value="0.742899 0.965101 0.384413"/>
+                                <param name="Wrap Mode" key="9999/3190682472/3190524681/3190522507/5/3190522514/38/42/5" value="1 (Repeat)"/>
+                                <param name="Opacity" key="9999/3190682472/3190524681/3190522507/5/3190522514/38/43" value="0.4527"/>
+                                <param name="Blur" key="9999/3190682472/3190524681/3190522507/5/3190522514/38/77" value="6.53 6.53"/>
+                                <param name="Custom Color 2" key="9999/3190682472/3190530027/3190532359/3190530043/2/1/1">
+                                    <keyframeAnimation>
+                                        <keyframe time="10891900/3000s" value="0.465108 0.186391 0.526018"/>
+                                        <keyframe time="10934000/3000s" value="0.288011 0.50005 0.973134"/>
+                                    </keyframeAnimation>
+                                </param>
+                                <text>
+                                    <text-style ref="ts3">BowedPa</text-style>
+                                    <text-style ref="ts4">d</text-style>
+                                </text>
+                                <text-style-def id="ts3">
+                                    <text-style font="Avenir Next" fontSize="166" fontColor="0.466667 0.831372 0.27451 1" bold="1" kerning="-4.0338" lineSpacing="-86.7">
+                                        <param name="MotionSimpleValues" key="MotionTextStyle:SimpleValues">
+                                            <param name="motionTextTracking" key="tracking" value="-4.0338"/>
+                                        </param>
+                                    </text-style>
+                                </text-style-def>
+                                <text-style-def id="ts4">
+                                    <text-style font="Avenir Next" fontSize="166" fontColor="0.466667 0.831372 0.27451 1" bold="1" lineSpacing="-86.7"/>
+                                </text-style-def>
+                                <adjust-transform position="-33.343 -18.5643" scale="0.746468 0.746468"/>
+                            </title>
+                        </asset-clip>
+                        <asset-clip ref="r9" offset="504900/3000s" name="Breathee" duration="139100/3000s" audioRole="dialogue">
+                            <title ref="r5" lane="1" offset="0s" name="Breathee - Lower Third" start="3600s" duration="35609600/768000s">
+                                <param name="Position" key="9999/3190682472/3190524681/3190522507/1/100/101" value="-1399.24 -665.753"/>
+                                <param name="Scale" key="9999/3190682472/3190524681/3190522507/1/100/105">
+                                    <keyframeAnimation>
+                                        <keyframe time="92160/153600s" value="1.77 1.77"/>
+                                        <keyframe time="360960/153600s" value="1 1"/>
+                                    </keyframeAnimation>
+                                </param>
+                                <param name="Anchor Point" key="9999/3190682472/3190524681/3190522507/1/100/107" value="-1781.19 -277.553"/>
+                                <param name="Layout Method" key="9999/3190682472/3190524681/3190522507/2/314" value="1 (Paragraph)"/>
+                                <param name="Left Margin" key="9999/3190682472/3190524681/3190522507/2/323" value="-1800"/>
+                                <param name="Right Margin" key="9999/3190682472/3190524681/3190522507/2/324" value="1319.01"/>
+                                <param name="Top Margin" key="9999/3190682472/3190524681/3190522507/2/325" value="-62.8619"/>
+                                <param name="Bottom Margin" key="9999/3190682472/3190524681/3190522507/2/326" value="-444.034"/>
+                                <param name="Line Spacing" key="9999/3190682472/3190524681/3190522507/2/354/3190522508/404" value="-86.7"/>
+                                <param name="Auto-Shrink" key="9999/3190682472/3190524681/3190522507/2/370" value="3 (To All Margins)"/>
+                                <param name="Alignment" key="9999/3190682472/3190524681/3190522507/2/373" value="0 (Left) 2 (Bottom)"/>
+                                <param name="Position" key="9999/3190682472/3190524681/3190522507/4/3190522511/1000/1001" value="0 -136.113"/>
+                                <param name="Animate" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/203" value="2 (Word)"/>
+                                <param name="Spread" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/204" value="5"/>
+                                <param name="Speed" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/208" value="6 (Custom)"/>
+                                <param name="Custom Speed" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/209">
+                                    <keyframeAnimation>
+                                        <keyframe time="-33280/153600s" value="0"/>
+                                        <keyframe time="122880/153600s" value="1"/>
+                                    </keyframeAnimation>
+                                </param>
+                                <param name="Minimum" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/220/215" value="0"/>
+                                <param name="Noisiness" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/220/222" value="0.41"/>
+                                <param name="Position Type" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/227" value="1 (Relative)"/>
+                                <text>
+                                    <text-style ref="ts5">Breathe</text-style>
+                                    <text-style ref="ts6">e</text-style>
+                                </text>
+                                <text-style-def id="ts5">
+                                    <text-style font="Avenir Next" fontSize="166" fontColor="0.316333 0 0.549146 1" bold="1" kerning="-4.0338" lineSpacing="-86.7">
+                                        <param name="MotionSimpleValues" key="MotionTextStyle:SimpleValues">
+                                            <param name="motionTextTracking" key="tracking" value="-4.0338"/>
+                                        </param>
+                                    </text-style>
+                                </text-style-def>
+                                <text-style-def id="ts6">
+                                    <text-style font="Avenir Next" fontSize="166" fontColor="0.316333 0 0.549146 1" bold="1" lineSpacing="-86.7"/>
+                                </text-style-def>
+                            </title>
+                            <chapter-marker start="0s" duration="1/48000s" value="Breathee" posterOffset="11/30s"/>
+                        </asset-clip>
+                        <asset-clip ref="r10" offset="644000/3000s" name="Crystal" duration="100700/3000s" audioRole="dialogue">
+                            <title ref="r5" lane="1" offset="0s" name="Crystal - Lower Third" start="3600s" duration="25779200/768000s">
+                                <param name="Position" key="9999/3190682472/3190524681/3190522507/1/100/101" value="-1399.24 -665.753"/>
+                                <param name="Scale" key="9999/3190682472/3190524681/3190522507/1/100/105">
+                                    <keyframeAnimation>
+                                        <keyframe time="92160/153600s" value="1.77 1.77"/>
+                                        <keyframe time="360960/153600s" value="1 1"/>
+                                    </keyframeAnimation>
+                                </param>
+                                <param name="Anchor Point" key="9999/3190682472/3190524681/3190522507/1/100/107" value="-1781.19 -277.553"/>
+                                <param name="Layout Method" key="9999/3190682472/3190524681/3190522507/2/314" value="1 (Paragraph)"/>
+                                <param name="Left Margin" key="9999/3190682472/3190524681/3190522507/2/323" value="-1800"/>
+                                <param name="Right Margin" key="9999/3190682472/3190524681/3190522507/2/324" value="1319.01"/>
+                                <param name="Top Margin" key="9999/3190682472/3190524681/3190522507/2/325" value="-62.8619"/>
+                                <param name="Bottom Margin" key="9999/3190682472/3190524681/3190522507/2/326" value="-444.034"/>
+                                <param name="Line Spacing" key="9999/3190682472/3190524681/3190522507/2/354/3190522508/404" value="-86.7"/>
+                                <param name="Auto-Shrink" key="9999/3190682472/3190524681/3190522507/2/370" value="3 (To All Margins)"/>
+                                <param name="Alignment" key="9999/3190682472/3190524681/3190522507/2/373" value="0 (Left) 2 (Bottom)"/>
+                                <param name="Position" key="9999/3190682472/3190524681/3190522507/4/3190522511/1000/1001" value="0 -136.113"/>
+                                <param name="Animate" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/203" value="2 (Word)"/>
+                                <param name="Spread" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/204" value="5"/>
+                                <param name="Speed" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/208" value="6 (Custom)"/>
+                                <param name="Custom Speed" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/209">
+                                    <keyframeAnimation>
+                                        <keyframe time="-33280/153600s" value="0"/>
+                                        <keyframe time="122880/153600s" value="1"/>
+                                    </keyframeAnimation>
+                                </param>
+                                <param name="Minimum" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/220/215" value="0"/>
+                                <param name="Noisiness" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/220/222" value="0.41"/>
+                                <param name="Position Type" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/227" value="1 (Relative)"/>
+                                <text>
+                                    <text-style ref="ts7">Crysta</text-style>
+                                    <text-style ref="ts8">l</text-style>
+                                </text>
+                                <text-style-def id="ts7">
+                                    <text-style font="Avenir Next" fontSize="166" fontColor="0.316333 0 0.549146 1" bold="1" kerning="-4.0338" lineSpacing="-86.7">
+                                        <param name="MotionSimpleValues" key="MotionTextStyle:SimpleValues">
+                                            <param name="motionTextTracking" key="tracking" value="-4.0338"/>
+                                        </param>
+                                    </text-style>
+                                </text-style-def>
+                                <text-style-def id="ts8">
+                                    <text-style font="Avenir Next" fontSize="166" fontColor="0.316333 0 0.549146 1" bold="1" lineSpacing="-86.7"/>
+                                </text-style-def>
+                            </title>
+                            <chapter-marker start="0s" duration="1/48000s" value="Crystal" posterOffset="11/30s"/>
+                            <chapter-marker start="19856483/720000s" duration="1/48000s" value="D50Breth" posterOffset="11/30s"/>
+                        </asset-clip>
+                        <asset-clip ref="r11" offset="744700/3000s" name="D50Breth" duration="288300/3000s" audioRole="dialogue">
+                            <title ref="r5" lane="1" offset="0s" name="D50Breth - Lower Third" start="3600s" duration="73804800/768000s">
+                                <param name="Position" key="9999/3190682472/3190524681/3190522507/1/100/101" value="-1399.24 -665.753"/>
+                                <param name="Scale" key="9999/3190682472/3190524681/3190522507/1/100/105">
+                                    <keyframeAnimation>
+                                        <keyframe time="92160/153600s" value="1.77 1.77"/>
+                                        <keyframe time="360960/153600s" value="1 1"/>
+                                    </keyframeAnimation>
+                                </param>
+                                <param name="Anchor Point" key="9999/3190682472/3190524681/3190522507/1/100/107" value="-1781.19 -277.553"/>
+                                <param name="Layout Method" key="9999/3190682472/3190524681/3190522507/2/314" value="1 (Paragraph)"/>
+                                <param name="Left Margin" key="9999/3190682472/3190524681/3190522507/2/323" value="-1800"/>
+                                <param name="Right Margin" key="9999/3190682472/3190524681/3190522507/2/324" value="1319.01"/>
+                                <param name="Top Margin" key="9999/3190682472/3190524681/3190522507/2/325" value="-62.8619"/>
+                                <param name="Bottom Margin" key="9999/3190682472/3190524681/3190522507/2/326" value="-444.034"/>
+                                <param name="Line Spacing" key="9999/3190682472/3190524681/3190522507/2/354/3190522508/404" value="-86.7"/>
+                                <param name="Auto-Shrink" key="9999/3190682472/3190524681/3190522507/2/370" value="3 (To All Margins)"/>
+                                <param name="Alignment" key="9999/3190682472/3190524681/3190522507/2/373" value="0 (Left) 2 (Bottom)"/>
+                                <param name="Position" key="9999/3190682472/3190524681/3190522507/4/3190522511/1000/1001" value="0 -136.113"/>
+                                <param name="Animate" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/203" value="2 (Word)"/>
+                                <param name="Spread" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/204" value="5"/>
+                                <param name="Speed" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/208" value="6 (Custom)"/>
+                                <param name="Custom Speed" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/209">
+                                    <keyframeAnimation>
+                                        <keyframe time="-33280/153600s" value="0"/>
+                                        <keyframe time="122880/153600s" value="1"/>
+                                    </keyframeAnimation>
+                                </param>
+                                <param name="Minimum" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/220/215" value="0"/>
+                                <param name="Noisiness" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/220/222" value="0.41"/>
+                                <param name="Position Type" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/227" value="1 (Relative)"/>
+                                <text>
+                                    <text-style ref="ts9">D50Bret</text-style>
+                                    <text-style ref="ts10">h</text-style>
+                                </text>
+                                <text-style-def id="ts10">
+                                    <text-style font="Avenir Next" fontSize="166" fontColor="0.316333 0 0.549146 1" bold="1" lineSpacing="-86.7"/>
+                                </text-style-def>
+                                <text-style-def id="ts9">
+                                    <text-style font="Avenir Next" fontSize="166" fontColor="0.316333 0 0.549146 1" bold="1" kerning="-4.0338" lineSpacing="-86.7">
+                                        <param name="MotionSimpleValues" key="MotionTextStyle:SimpleValues">
+                                            <param name="motionTextTracking" key="tracking" value="-4.0338"/>
+                                        </param>
+                                    </text-style>
+                                </text-style-def>
+                            </title>
+                        </asset-clip>
+                        <asset-clip ref="r12" offset="1033000/3000s" name="G-Steps" duration="115800/3000s" audioRole="dialogue">
+                            <title ref="r5" lane="1" offset="0s" name="G-Steps - Lower Third" start="3600s" duration="29644800/768000s">
+                                <param name="Position" key="9999/3190682472/3190524681/3190522507/1/100/101" value="-1399.24 -665.753"/>
+                                <param name="Scale" key="9999/3190682472/3190524681/3190522507/1/100/105">
+                                    <keyframeAnimation>
+                                        <keyframe time="92160/153600s" value="1.77 1.77"/>
+                                        <keyframe time="360960/153600s" value="1 1"/>
+                                    </keyframeAnimation>
+                                </param>
+                                <param name="Anchor Point" key="9999/3190682472/3190524681/3190522507/1/100/107" value="-1781.19 -277.553"/>
+                                <param name="Layout Method" key="9999/3190682472/3190524681/3190522507/2/314" value="1 (Paragraph)"/>
+                                <param name="Left Margin" key="9999/3190682472/3190524681/3190522507/2/323" value="-1800"/>
+                                <param name="Right Margin" key="9999/3190682472/3190524681/3190522507/2/324" value="1319.01"/>
+                                <param name="Top Margin" key="9999/3190682472/3190524681/3190522507/2/325" value="-62.8619"/>
+                                <param name="Bottom Margin" key="9999/3190682472/3190524681/3190522507/2/326" value="-444.034"/>
+                                <param name="Line Spacing" key="9999/3190682472/3190524681/3190522507/2/354/3190522508/404" value="-86.7"/>
+                                <param name="Auto-Shrink" key="9999/3190682472/3190524681/3190522507/2/370" value="3 (To All Margins)"/>
+                                <param name="Alignment" key="9999/3190682472/3190524681/3190522507/2/373" value="0 (Left) 2 (Bottom)"/>
+                                <param name="Position" key="9999/3190682472/3190524681/3190522507/4/3190522511/1000/1001" value="0 -136.113"/>
+                                <param name="Animate" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/203" value="2 (Word)"/>
+                                <param name="Spread" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/204" value="5"/>
+                                <param name="Speed" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/208" value="6 (Custom)"/>
+                                <param name="Custom Speed" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/209">
+                                    <keyframeAnimation>
+                                        <keyframe time="-33280/153600s" value="0"/>
+                                        <keyframe time="122880/153600s" value="1"/>
+                                    </keyframeAnimation>
+                                </param>
+                                <param name="Minimum" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/220/215" value="0"/>
+                                <param name="Noisiness" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/220/222" value="0.41"/>
+                                <param name="Position Type" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/227" value="1 (Relative)"/>
+                                <text>
+                                    <text-style ref="ts11">G-Step</text-style>
+                                    <text-style ref="ts12">s</text-style>
+                                </text>
+                                <text-style-def id="ts11">
+                                    <text-style font="Avenir Next" fontSize="166" fontColor="0.316333 0 0.549146 1" bold="1" kerning="-4.0338" lineSpacing="-86.7">
+                                        <param name="MotionSimpleValues" key="MotionTextStyle:SimpleValues">
+                                            <param name="motionTextTracking" key="tracking" value="-4.0338"/>
+                                        </param>
+                                    </text-style>
+                                </text-style-def>
+                                <text-style-def id="ts12">
+                                    <text-style font="Avenir Next" fontSize="166" fontColor="0.316333 0 0.549146 1" bold="1" lineSpacing="-86.7"/>
+                                </text-style-def>
+                            </title>
+                            <chapter-marker start="0s" duration="1/48000s" value="G-Steps" posterOffset="11/30s"/>
+                        </asset-clip>
+                        <asset-clip ref="r13" offset="1148800/3000s" name="Stay Pad" duration="156300/3000s" audioRole="dialogue">
+                            <title ref="r5" lane="1" offset="0s" name="Stay Pad - Lower Third" start="3600s" duration="40012800/768000s">
+                                <param name="Position" key="9999/3190682472/3190524681/3190522507/1/100/101" value="-1399.24 -665.753"/>
+                                <param name="Scale" key="9999/3190682472/3190524681/3190522507/1/100/105">
+                                    <keyframeAnimation>
+                                        <keyframe time="92160/153600s" value="1.77 1.77"/>
+                                        <keyframe time="360960/153600s" value="1 1"/>
+                                    </keyframeAnimation>
+                                </param>
+                                <param name="Anchor Point" key="9999/3190682472/3190524681/3190522507/1/100/107" value="-1781.19 -277.553"/>
+                                <param name="Layout Method" key="9999/3190682472/3190524681/3190522507/2/314" value="1 (Paragraph)"/>
+                                <param name="Left Margin" key="9999/3190682472/3190524681/3190522507/2/323" value="-1800"/>
+                                <param name="Right Margin" key="9999/3190682472/3190524681/3190522507/2/324" value="1319.01"/>
+                                <param name="Top Margin" key="9999/3190682472/3190524681/3190522507/2/325" value="-62.8619"/>
+                                <param name="Bottom Margin" key="9999/3190682472/3190524681/3190522507/2/326" value="-444.034"/>
+                                <param name="Line Spacing" key="9999/3190682472/3190524681/3190522507/2/354/3190522508/404" value="-86.7"/>
+                                <param name="Auto-Shrink" key="9999/3190682472/3190524681/3190522507/2/370" value="3 (To All Margins)"/>
+                                <param name="Alignment" key="9999/3190682472/3190524681/3190522507/2/373" value="0 (Left) 2 (Bottom)"/>
+                                <param name="Position" key="9999/3190682472/3190524681/3190522507/4/3190522511/1000/1001" value="0 -136.113"/>
+                                <param name="Animate" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/203" value="2 (Word)"/>
+                                <param name="Spread" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/204" value="5"/>
+                                <param name="Speed" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/208" value="6 (Custom)"/>
+                                <param name="Custom Speed" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/209">
+                                    <keyframeAnimation>
+                                        <keyframe time="-33280/153600s" value="0"/>
+                                        <keyframe time="122880/153600s" value="1"/>
+                                    </keyframeAnimation>
+                                </param>
+                                <param name="Minimum" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/220/215" value="0"/>
+                                <param name="Noisiness" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/220/222" value="0.41"/>
+                                <param name="Position Type" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/227" value="1 (Relative)"/>
+                                <text>
+                                    <text-style ref="ts13">Stay Pa</text-style>
+                                    <text-style ref="ts14">d</text-style>
+                                </text>
+                                <text-style-def id="ts13">
+                                    <text-style font="Avenir Next" fontSize="166" fontColor="0.316333 0 0.549146 1" bold="1" kerning="-4.0338" lineSpacing="-86.7">
+                                        <param name="MotionSimpleValues" key="MotionTextStyle:SimpleValues">
+                                            <param name="motionTextTracking" key="tracking" value="-4.0338"/>
+                                        </param>
+                                    </text-style>
+                                </text-style-def>
+                                <text-style-def id="ts14">
+                                    <text-style font="Avenir Next" fontSize="166" fontColor="0.316333 0 0.549146 1" bold="1" lineSpacing="-86.7"/>
+                                </text-style-def>
+                            </title>
+                            <chapter-marker start="0s" duration="1/48000s" value="Stay Pad" posterOffset="11/30s"/>
+                        </asset-clip>
+                        <asset-clip ref="r14" offset="1305100/3000s" name="Vio-Orch" duration="239100/3000s" audioRole="dialogue">
+                            <title ref="r5" lane="1" offset="0s" name="Vio-Orch - Lower Third" start="3600s" duration="61209600/768000s">
+                                <param name="Position" key="9999/3190682472/3190524681/3190522507/1/100/101" value="-1399.24 -665.753"/>
+                                <param name="Scale" key="9999/3190682472/3190524681/3190522507/1/100/105">
+                                    <keyframeAnimation>
+                                        <keyframe time="92160/153600s" value="1.77 1.77"/>
+                                        <keyframe time="360960/153600s" value="1 1"/>
+                                    </keyframeAnimation>
+                                </param>
+                                <param name="Anchor Point" key="9999/3190682472/3190524681/3190522507/1/100/107" value="-1781.19 -277.553"/>
+                                <param name="Layout Method" key="9999/3190682472/3190524681/3190522507/2/314" value="1 (Paragraph)"/>
+                                <param name="Left Margin" key="9999/3190682472/3190524681/3190522507/2/323" value="-1800"/>
+                                <param name="Right Margin" key="9999/3190682472/3190524681/3190522507/2/324" value="1319.01"/>
+                                <param name="Top Margin" key="9999/3190682472/3190524681/3190522507/2/325" value="-62.8619"/>
+                                <param name="Bottom Margin" key="9999/3190682472/3190524681/3190522507/2/326" value="-444.034"/>
+                                <param name="Line Spacing" key="9999/3190682472/3190524681/3190522507/2/354/3190522508/404" value="-86.7"/>
+                                <param name="Auto-Shrink" key="9999/3190682472/3190524681/3190522507/2/370" value="3 (To All Margins)"/>
+                                <param name="Alignment" key="9999/3190682472/3190524681/3190522507/2/373" value="0 (Left) 2 (Bottom)"/>
+                                <param name="Position" key="9999/3190682472/3190524681/3190522507/4/3190522511/1000/1001" value="0 -136.113"/>
+                                <param name="Animate" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/203" value="2 (Word)"/>
+                                <param name="Spread" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/204" value="5"/>
+                                <param name="Speed" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/208" value="6 (Custom)"/>
+                                <param name="Custom Speed" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/209">
+                                    <keyframeAnimation>
+                                        <keyframe time="-33280/153600s" value="0"/>
+                                        <keyframe time="122880/153600s" value="1"/>
+                                    </keyframeAnimation>
+                                </param>
+                                <param name="Minimum" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/220/215" value="0"/>
+                                <param name="Noisiness" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/220/222" value="0.41"/>
+                                <param name="Position Type" key="9999/3190682472/3190524681/3190522507/4/3190522511/201/227" value="1 (Relative)"/>
+                                <text>
+                                    <text-style ref="ts15">Vio-Orc</text-style>
+                                    <text-style ref="ts16">h</text-style>
+                                </text>
+                                <text-style-def id="ts15">
+                                    <text-style font="Avenir Next" fontSize="166" fontColor="0.316333 0 0.549146 1" bold="1" kerning="-4.0338" lineSpacing="-86.7">
+                                        <param name="MotionSimpleValues" key="MotionTextStyle:SimpleValues">
+                                            <param name="motionTextTracking" key="tracking" value="-4.0338"/>
+                                        </param>
+                                    </text-style>
+                                </text-style-def>
+                                <text-style-def id="ts16">
+                                    <text-style font="Avenir Next" fontSize="166" fontColor="0.316333 0 0.549146 1" bold="1" lineSpacing="-86.7"/>
+                                </text-style-def>
+                            </title>
+                            <chapter-marker start="0s" duration="1/48000s" value="Vio-Orch" posterOffset="11/30s"/>
+                        </asset-clip>
+                    </spine>
+                </sequence>
+            </project>
+        </event>
+        <smart-collection name="Projects" match="all">
+            <match-clip rule="is" type="project"/>
+        </smart-collection>
+        <smart-collection name="All Video" match="any">
+            <match-media rule="is" type="videoOnly"/>
+            <match-media rule="is" type="videoWithAudio"/>
+        </smart-collection>
+        <smart-collection name="Audio Only" match="all">
+            <match-media rule="is" type="audioOnly"/>
+        </smart-collection>
+        <smart-collection name="Stills" match="all">
+            <match-media rule="is" type="stills"/>
+        </smart-collection>
+        <smart-collection name="Favorites" match="all">
+            <match-ratings value="favorites"/>
+        </smart-collection>
+    </library>
+</fcpxml>

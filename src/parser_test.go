@@ -27,6 +27,30 @@ func TestParser(t *testing.T) {
 			contentPath: "empty.fcpxml",
 			expectedContent: "",
 		},
+		{
+			name: "complicated",
+			contentPath: "example_complicated.fcpxml",
+			expectedContent: `0:00 A
+0:00 B
+0:00 C
+0:00 D`,
+		},
+		{
+			name: "simple",
+			contentPath: "example_simple.fcpxml",
+			expectedContent: `0:00 A
+0:00 B
+0:00 C
+0:00 D`,
+		},
+		{
+			name: "real project",
+			contentPath: "example_i_think_this_one_is_a_real_project.fcpxml",
+			expectedContent: `0:00 A
+0:00 B
+0:00 C
+0:00 D`,
+		},
 	}
 	for _, testCase := range tests {
 		t.Run(testCase.name, func(t *testing.T) {

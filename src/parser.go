@@ -1,5 +1,5 @@
 package main
 
 func Parse(contents string) (string, error) {
-	return contents, nil
+	return "", nil
 }

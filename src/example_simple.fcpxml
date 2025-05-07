@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+
+<fcpxml version="1.13">
+    <resources>
+        <format id="r1" name="FFVideoFormat720p30" frameDuration="100/3000s" width="1280" height="720" colorSpace="1-1-1 (Rec. 709)"/>
+        <asset id="r2" name="Carvin JB24 Amplifire 1" uid="A833CB41FDFCA3556C598C65CCF9C302" start="0s" duration="5936256/44100s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="44100">
+            <media-rep kind="original-media" sig="A833CB41FDFCA3556C598C65CCF9C302" src="file:///Volumes/VideoMedia/Amplifire%20Demos/Amplifire%20Demos.fcpbundle/Amplifire%20Audio/Original%20Media/Carvin%20JB24%20Amplifire%201.mp3">
+                <bookmark>Ym9va4gEAAAAAAQQMAAAAIPWOop9SdPJqYahBM9tNtJFf4/uNOJA2QBUcdZAWng9qAMAAAQAAAADAwAAABgAKAcAAAABAQAAVm9sdW1lcwAKAAAAAQEAAFZpZGVvTWVkaWEAAA8AAAABAQAAQW1wbGlmaXJlIERlbW9zABkAAAABAQAAQW1wbGlmaXJlIERlbW9zLmZjcGJ1bmRsZQAAAA8AAAABAQAAQW1wbGlmaXJlIEF1ZGlvAA4AAAABAQAAT3JpZ2luYWwgTWVkaWEAABsAAAABAQAAQ2FydmluIEpCMjQgQW1wbGlmaXJlIDEubXAzABwAAAABBgAAEAAAACAAAAA0AAAATAAAAHAAAACIAAAAoAAAAAgAAAAEAwAApEIAAAAAAAAIAAAABAMAAAIAAAAAAAAACAAAAAQDAADCUwAAAAAAAAgAAAAEAwAA/1MAAAAAAAAIAAAABAMAAGdUAAAAAAAACAAAAAQDAABrVAAAAAAAAAgAAAAEAwAAhFQAAAAAAAAcAAAAAQYAAOgAAAD4AAAACAEAABgBAAAoAQAAOAEAAEgBAAAIAAAAAAQAAEHG5JIy33lOGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAbAAAAAQkAAGZpbGU6Ly8vVm9sdW1lcy9WaWRlb01lZGlhLwAIAAAABAMAAADA/HSjAwAACAAAAAAEAABBxtuiqfnm+iQAAAABAQAARUQwQTdENzctRTg0Ni00RTg0LUI5NEYtQ0RBNjNCRkNCNTg1GAAAAAECAAABAQAAAQAAAO8TAAABAAAAAAAAAAAAAAATAAAAAQEAAC9Wb2x1bWVzL1ZpZGVvTWVkaWEACAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAkIKW5wAAAAgAAAAABAAAQcbVF0yAAAAkAAAAAQEAAEZERDYzQ0M2LTMwRDYtNEM1Ni1COEE3LUU5MzAxMTQ1MEJEQRgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAAYAAAAP7///8A8AAAAAAAAAcAAAACIAAA6AIAAAAAAAAFIAAAWAIAAAAAAAAQIAAAaAIAAAAAAAARIAAAnAIAAAAAAAASIAAAfAIAAAAAAAATIAAAjAIAAAAAAAAgIAAAyAIAAAAAAAAEAAAAAwMAAADwAAAEAAAAAwMAAAAAAAAEAAAAAwMAAAEAAAAgAAAAAQYAAFwDAABoAwAAdAMAAGgDAABoAwAAaAMAAGgDAABoAwAAqAAAAP7///8BAAAA9AIAAA0AAAAEEAAAxAAAAAAAAAAFEAAAWAEAAAAAAAAQEAAAjAEAAAAAAABAEAAAfAEAAAAAAAAAIAAAgAMAAAAAAAACIAAAPAIAAAAAAAAFIAAArAEAAAAAAAAQIAAAIAAAAAAAAAARIAAA8AEAAAAAAAASIAAA0AEAAAAAAAATIAAA4AEAAAAAAAAgIAAAHAIAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            </media-rep>
+            <metadata>
+                <md key="com.apple.proapps.mio.ingestDate" value="2025-05-05 12:58:30 -0400"/>
+            </metadata>
+        </asset>
+        <asset id="r3" name="Carvin JB24 Amplifire 2" uid="18130038D9496A3647DDED599B959099" start="0s" duration="1733760/44100s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="44100">
+            <media-rep kind="original-media" sig="18130038D9496A3647DDED599B959099" src="file:///Volumes/VideoMedia/Amplifire%20Demos/Amplifire%20Demos.fcpbundle/Amplifire%20Audio/Original%20Media/Carvin%20JB24%20Amplifire%202.mp3">
+                <bookmark>Ym9va4gEAAAAAAQQMAAAAG2FuUn64qt4XFFr1xiJidpVUtXFe56ydiqEtccI0K2rqAMAAAQAAAADAwAAABgAKAcAAAABAQAAVm9sdW1lcwAKAAAAAQEAAFZpZGVvTWVkaWEAAA8AAAABAQAAQW1wbGlmaXJlIERlbW9zABkAAAABAQAAQW1wbGlmaXJlIERlbW9zLmZjcGJ1bmRsZQAAAA8AAAABAQAAQW1wbGlmaXJlIEF1ZGlvAA4AAAABAQAAT3JpZ2luYWwgTWVkaWEAABsAAAABAQAAQ2FydmluIEpCMjQgQW1wbGlmaXJlIDIubXAzABwAAAABBgAAEAAAACAAAAA0AAAATAAAAHAAAACIAAAAoAAAAAgAAAAEAwAApEIAAAAAAAAIAAAABAMAAAIAAAAAAAAACAAAAAQDAADCUwAAAAAAAAgAAAAEAwAA/1MAAAAAAAAIAAAABAMAAGdUAAAAAAAACAAAAAQDAABrVAAAAAAAAAgAAAAEAwAAh1QAAAAAAAAcAAAAAQYAAOgAAAD4AAAACAEAABgBAAAoAQAAOAEAAEgBAAAIAAAAAAQAAEHG5JJmvv98GAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAbAAAAAQkAAGZpbGU6Ly8vVm9sdW1lcy9WaWRlb01lZGlhLwAIAAAABAMAAADA/HSjAwAACAAAAAAEAABBxtuiqfnm+iQAAAABAQAARUQwQTdENzctRTg0Ni00RTg0LUI5NEYtQ0RBNjNCRkNCNTg1GAAAAAECAAABAQAAAQAAAO8TAAABAAAAAAAAAAAAAAATAAAAAQEAAC9Wb2x1bWVzL1ZpZGVvTWVkaWEACAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAkIKW5wAAAAgAAAAABAAAQcbVF0yAAAAkAAAAAQEAAEZERDYzQ0M2LTMwRDYtNEM1Ni1COEE3LUU5MzAxMTQ1MEJEQRgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAAYAAAAP7///8A8AAAAAAAAAcAAAACIAAA6AIAAAAAAAAFIAAAWAIAAAAAAAAQIAAAaAIAAAAAAAARIAAAnAIAAAAAAAASIAAAfAIAAAAAAAATIAAAjAIAAAAAAAAgIAAAyAIAAAAAAAAEAAAAAwMAAADwAAAEAAAAAwMAAAAAAAAEAAAAAwMAAAEAAAAgAAAAAQYAAFwDAABoAwAAdAMAAGgDAABoAwAAaAMAAGgDAABoAwAAqAAAAP7///8BAAAA9AIAAA0AAAAEEAAAxAAAAAAAAAAFEAAAWAEAAAAAAAAQEAAAjAEAAAAAAABAEAAAfAEAAAAAAAAAIAAAgAMAAAAAAAACIAAAPAIAAAAAAAAFIAAArAEAAAAAAAAQIAAAIAAAAAAAAAARIAAA8AEAAAAAAAASIAAA0AEAAAAAAAATIAAA4AEAAAAAAAAgIAAAHAIAAAAAAAAQ0AAABAAAAAAAAAA=</bookmark>
+            </media-rep>
+            <metadata>
+                <md key="com.apple.proapps.mio.ingestDate" value="2025-05-05 12:58:30 -0400"/>
+            </metadata>
+        </asset>
+    </resources>
+    <library location="file:///Volumes/VideoMedia/Amplifire%20Demos/Amplifire%20Demos.fcpbundle/">
+        <event name="Amplifire Audio" uid="E38F1C2F-02F8-479E-8665-FBD8E471A116">
+            <project name="Carvin JB24" uid="F4A7C255-959A-4030-A167-61005248A5E1" modDate="2025-05-06 19:00:15 -0400">
+                <sequence format="r1" duration="521700/3000s" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+                    <spine>
+                        <asset-clip ref="r2" offset="0s" name="Carvin JB24 Amplifire 1" duration="403800/3000s" audioRole="dialogue">
+                            <chapter-marker start="0s" duration="1/48000s" value="A" posterOffset="11/30s"/>
+                            <chapter-marker start="3066449/144000s" duration="1/48000s" value="B" posterOffset="11/30s"/>
+                            <audio-channel-source srcCh="1, 2" role="music.music-1"/>
+                        </asset-clip>
+                        <asset-clip ref="r3" offset="403800/3000s" name="Carvin JB24 Amplifire 2" duration="117900/3000s" audioRole="dialogue">
+                            <chapter-marker start="0s" duration="1/48000s" value="C" posterOffset="11/30s"/>
+                            <chapter-marker start="290971/12000s" duration="1/48000s" value="D" posterOffset="11/30s"/>
+                            <audio-channel-source srcCh="1, 2" role="music.music-1"/>
+                        </asset-clip>
+                    </spine>
+                </sequence>
+            </project>
+        </event>
+        <smart-collection name="Projects" match="all">
+            <match-clip rule="is" type="project"/>
+        </smart-collection>
+        <smart-collection name="All Video" match="any">
+            <match-media rule="is" type="videoOnly"/>
+            <match-media rule="is" type="videoWithAudio"/>
+        </smart-collection>
+        <smart-collection name="Audio Only" match="all">
+            <match-media rule="is" type="audioOnly"/>
+        </smart-collection>
+        <smart-collection name="Stills" match="all">
+            <match-media rule="is" type="stills"/>
+        </smart-collection>
+        <smart-collection name="Favorites" match="all">
+            <match-ratings value="favorites"/>
+        </smart-collection>
+    </library>
+</fcpxml>
