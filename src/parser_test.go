@@ -44,6 +44,14 @@ func TestParser(t *testing.T) {
 0:00 D`,
 		},
 		{
+			name: "simple2",
+			contentPath: "example_simple_2.fcpxml",
+			expectedContent: `0:00 A
+0:00 B
+0:00 C
+0:00 D`,
+		},
+		{
 			name: "real project",
 			contentPath: "example_i_think_this_one_is_a_real_project.fcpxml",
 			expectedContent: `0:00 A

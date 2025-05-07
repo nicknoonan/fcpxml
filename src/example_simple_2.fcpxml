@@ -28,6 +28,7 @@
                     <spine>
                         <asset-clip ref="r2" offset="0s" name="Carvin JB24 Amplifire 1" duration="403800/3000s" audioRole="dialogue">
                             <chapter-marker start="0s" duration="1/48000s" value="A" posterOffset="11/30s"/>
+                            <chapter-marker start="3066449/144000s" duration="1/48000s" value="B" posterOffset="11/30s"/>
                             <audio-channel-source srcCh="1, 2" role="music.music-1"/>
                         </asset-clip>
                         <asset-clip ref="r3" offset="403800/3000s" name="Carvin JB24 Amplifire 2" duration="117900/3000s" audioRole="dialogue">
