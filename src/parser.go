@@ -106,41 +106,6 @@ func FormatMarkerString(name, time string) (string) {
 	return fmt.Sprintf("%s  %s", name, time)
 }
 
-
-// <chapter-marker start="0s" duration="1/48000s" value="Vio-Orch" posterOffset="11/30s"/>
-type DocumentElement struct {
-	tag string
-	value string
-	start float64
-	offset float64
-}
-
-func NewDocumentElement(tag string, element map[string]interface{}) (DocumentElement) {
-	value := ""
-	start := 0.0
-	offset := 0.0
-	if (element["-value"] != nil) {
-		value = element["-value"].(string)
-	}
-
-	if (element["-start"] != nil) {
-		startString := element["-start"].(string)
-		start = ParseRationalTimeString(startString)
-	}
-
-	if (element["-offset"] != nil) {
-		offsetString := element["-start"].(string)
-		offset = ParseRationalTimeString(offsetString)
-	}
-
-	return DocumentElement{
-		tag,
-		value,
-		start,
-		offset,
-	}
-}
-
 func ParseRationalTimeString(time string) (float64) {
 	seconds := 0.0
 	rat := new(big.Rat)
@@ -153,10 +118,6 @@ func ParseRationalTimeString(time string) (float64) {
 		return seconds - 3600
 	}
 	return seconds
-}
-
-func ParseName(xml mxj.Map, tag DocumentElement) (string) {
-	return tag.value
 }
 
 func FormatTimeStamp(start, offset float64, value string) (string) {
