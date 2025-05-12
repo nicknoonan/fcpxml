@@ -1,18 +1,171 @@
 package main
 
 import (
-	"log"
+	"fmt"
+	"maps"
+	"reflect"
+
+	//"log"
+	"math/big"
+	"strings"
+
 	"github.com/clbanning/mxj/v2"
+	"time"
 )
 
 func Parse(contents string) (string, error) {
-	mymap, err := mxj.NewMapXml([]byte(contents))
+	if (contents == "") {
+		return "", nil
+	}
+	xml, err := mxj.NewMapXml([]byte(contents))
 	if err != nil {
 		return "", err
 	}
-	// log.Println(mymap.StringIndent())
-	//mymap.PathsForKey("chapter-marker")
-	log.Println(mymap.PathsForKey("chapter-marker"))
-	log.Println(mymap.ValuesForPath("fcpxml.library.event.project.sequence.spine.asset-clip.chapter-marker"))
-	return mymap.StringIndent(), nil
+
+	ele, _ := xml.ValueForPath("fcpxml")
+	parsedContent := ""
+	// iterate the list of chapter marker XML paths
+	root := []map[string]interface{}{ele.(map[string]interface{})}
+	markers := findChapterMarker(0.0,0.0,"fcpxml",root,[]string{})
+	println(markers)
+
+	for _, marker := range markers {
+		parsedContent += marker
+		parsedContent += "\n"
+	}
+	return parsedContent, nil
+}
+
+func findChapterMarker(start, offset float64, tag string, xml []map[string]interface{}, acc []string) ([]string) {
+	// if chapter markers then 
+	// do a little math and 
+	// format a little string
+	// and do a little twirl
+	if (tag == "chapter-marker") {
+		for _, element := range xml {
+			startString := element["-start"].(string)
+			if (start == 0) { 
+				start = ParseRationalTimeString(startString)
+			} else {
+				start -= ParseRationalTimeString(startString)
+			}
+			marker := FormatTimeStamp(start, offset, element["-value"].(string))
+			acc = append(acc, marker)
+		}
+		return acc
+	}
+
+	// recursively look for chapter marker in child elements of current element
+	curStart := start
+	curOffset := offset
+	for _, xmlObj := range xml {
+		start = curStart
+		offset = curOffset
+		for key := range maps.Keys(xmlObj) {
+			if !strings.HasPrefix(key, "-") {
+				keyType := reflect.TypeOf(xmlObj[key])
+				keyTypeKind := keyType.Kind()
+				var children []map[string]interface{}
+				if (keyTypeKind == reflect.Array || keyTypeKind == reflect.Slice) {
+					for _, child := range xmlObj[key].([]interface{}) {
+						kind := reflect.TypeOf(child).Kind()
+						if (kind == reflect.Map) {
+							children = append(children, child.(map[string]interface{}))
+						}
+					}
+				} else if (keyTypeKind == reflect.String) {
+					return acc
+				} else if (keyTypeKind == reflect.Map) {
+					child := xmlObj[key].(map[string]interface{})
+					children = append(children, child)
+				} else {
+					panic("unknown key type")
+				}
+				if (xmlObj["-offset"] != nil) {
+					offsetString := xmlObj["-offset"].(string)
+					offset += ParseRationalTimeString(offsetString)
+				}
+				if (xmlObj["-start"] != nil) {
+					startString := xmlObj["-start"].(string)
+					if (start == 0) { 
+						start = ParseRationalTimeString(startString)
+					} else {
+						start -= ParseRationalTimeString(startString)
+					}
+				}
+				acc = findChapterMarker(start, offset, key, children, acc)
+			}
+		}
+	}
+
+	// if tag isn't chapter marker and has no child elements return accumulator
+	return acc
+}
+
+func FormatMarkerString(name, time string) (string) {
+	return fmt.Sprintf("%s  %s", name, time)
+}
+
+
+// <chapter-marker start="0s" duration="1/48000s" value="Vio-Orch" posterOffset="11/30s"/>
+type DocumentElement struct {
+	tag string
+	value string
+	start float64
+	offset float64
+}
+
+func NewDocumentElement(tag string, element map[string]interface{}) (DocumentElement) {
+	value := ""
+	start := 0.0
+	offset := 0.0
+	if (element["-value"] != nil) {
+		value = element["-value"].(string)
+	}
+
+	if (element["-start"] != nil) {
+		startString := element["-start"].(string)
+		start = ParseRationalTimeString(startString)
+	}
+
+	if (element["-offset"] != nil) {
+		offsetString := element["-start"].(string)
+		offset = ParseRationalTimeString(offsetString)
+	}
+
+	return DocumentElement{
+		tag,
+		value,
+		start,
+		offset,
+	}
+}
+
+func ParseRationalTimeString(time string) (float64) {
+	seconds := 0.0
+	rat := new(big.Rat)
+	offsetRat, ok := rat.SetString(strings.Trim(time, "s"))
+	if (!ok) {
+		// this should be handled better
+	}
+	seconds, _ = offsetRat.Float64()
+	if (seconds >= 3600) {
+		return seconds - 3600
+	}
+	return seconds
+}
+
+func ParseName(xml mxj.Map, tag DocumentElement) (string) {
+	return tag.value
+}
+
+func FormatTimeStamp(start, offset float64, value string) (string) {
+	timeValue, _ := time.Parse(time.RFC3339, "1998-12-03T00:00:00Z")
+	duration, err := time.ParseDuration(fmt.Sprintf("%ds",int(offset+start)))
+	if (err != nil) {
+		panic("failed to parse time duration")
+	}
+	timeValue = timeValue.Add(duration)
+	
+	return fmt.Sprintf("%s %s", timeValue.Format(time.TimeOnly), value)
 }
