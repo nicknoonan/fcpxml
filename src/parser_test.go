@@ -46,18 +46,24 @@ func TestParser(t *testing.T) {
 		{
 			name: "simple2",
 			contentPath: "example_simple_2.fcpxml",
-			expectedContent: `0:00 A
-0:00 B
-0:00 C
-0:00 D`,
+			expectedContent: `00:00:00 A
+00:00:21 B
+00:02:14 C
+00:02:38 D
+`,
 		},
 		{
 			name: "real project",
 			contentPath: "example_i_think_this_one_is_a_real_project.fcpxml",
-			expectedContent: `0:00 A
-0:00 B
-0:00 C
-0:00 D`,
+			expectedContent: `00:00:00 VeryFX!
+00:01:33 BowedPad
+00:02:48 Breathee
+00:03:34 Crystal
+00:04:02 D50Breth
+00:05:44 G-Steps
+00:06:22 Stay Pad
+00:07:15 Vio-Orch
+`,
 		},
 	}
 	for _, testCase := range tests {
@@ -66,7 +72,8 @@ func TestParser(t *testing.T) {
 			if err != nil {
 				t.Errorf("Error while loading test file: %v", err)
 			}
-			result, err := Parse(string(contentBytes))
+			content := string(contentBytes)
+			result, err := Parse(content)
 			if err != nil {
 				t.Errorf("Error while parsing: %v", err)
 			}

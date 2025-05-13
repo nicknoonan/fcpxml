@@ -11,10 +11,12 @@ import (
 
 	"github.com/clbanning/mxj/v2"
 	"time"
+	"sort"
 )
 
 func Parse(contents string) (string, error) {
-	if (contents == "") {
+	
+	if (strings.Trim(contents, "\n") == "") {
 		return "", nil
 	}
 	xml, err := mxj.NewMapXml([]byte(contents))
@@ -27,6 +29,7 @@ func Parse(contents string) (string, error) {
 	// iterate the list of chapter marker XML paths
 	root := []map[string]interface{}{ele.(map[string]interface{})}
 	markers := findChapterMarker(0.0,0.0,"fcpxml",root,[]string{})
+	sort.Strings(markers)
 	println(markers)
 
 	for _, marker := range markers {
@@ -59,9 +62,9 @@ func findChapterMarker(start, offset float64, tag string, xml []map[string]inter
 	curStart := start
 	curOffset := offset
 	for _, xmlObj := range xml {
-		start = curStart
-		offset = curOffset
 		for key := range maps.Keys(xmlObj) {
+			start = curStart
+			offset = curOffset
 			if !strings.HasPrefix(key, "-") {
 				keyType := reflect.TypeOf(xmlObj[key])
 				keyTypeKind := keyType.Kind()
@@ -81,11 +84,11 @@ func findChapterMarker(start, offset float64, tag string, xml []map[string]inter
 				} else {
 					panic("unknown key type")
 				}
-				if (xmlObj["-offset"] != nil) {
+				if ((xmlObj["-offset"] != nil) && (tag != "spine") && (offset == 0.0)) {
 					offsetString := xmlObj["-offset"].(string)
 					offset += ParseRationalTimeString(offsetString)
 				}
-				if (xmlObj["-start"] != nil) {
+				if ((xmlObj["-start"] != nil) && (tag != "spine")) {
 					startString := xmlObj["-start"].(string)
 					if (start == 0) { 
 						start = ParseRationalTimeString(startString)
