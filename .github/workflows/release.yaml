@@ -23,7 +23,7 @@ jobs:
       shell: bash
       run: |
         cd src
-        go get src
+        go get .
 
     - name: Build
       run: |
