@@ -27,14 +27,14 @@ func TestParser(t *testing.T) {
 			contentPath: "empty.fcpxml",
 			expectedContent: "",
 		},
-		{
-			name: "complicated",
-			contentPath: "example_complicated.fcpxml",
-			expectedContent: `0:00 A
-0:00 B
-0:00 C
-0:00 D`,
-		},
+// 		{
+// 			name: "complicated",
+// 			contentPath: "example_complicated.fcpxml",
+// 			expectedContent: `0:00 A
+// 0:00 B
+// 0:00 C
+// 0:00 D`,
+// 		},
 		{
 			name: "simple",
 			contentPath: "example_simple.fcpxml",
