@@ -55,5 +55,5 @@ jobs:
         azcliversion: latest
         inlineScript: |
           az account show
-          az storage blob upload -f src/parser.exe --account-name $ACCOUNT_NAME --container-name $CONTAINER_NAME
-          az storage blob upload -f src/parser --account-name $ACCOUNT_NAME --container-name $CONTAINER_NAME
+          az storage blob upload -f src/parser.exe --account-name $ACCOUNT_NAME --container-name $CONTAINER_NAME --overwrite
+          az storage blob upload -f src/parser --account-name $ACCOUNT_NAME --container-name $CONTAINER_NAME --overwrite

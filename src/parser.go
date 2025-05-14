@@ -30,8 +30,6 @@ func Parse(contents string) (string, error) {
 	root := []map[string]interface{}{ele.(map[string]interface{})}
 	markers := findChapterMarker(0.0,0.0,"fcpxml",root,[]string{})
 	sort.Strings(markers)
-	println(markers)
-
 	for _, marker := range markers {
 		parsedContent += marker
 		parsedContent += "\n"
