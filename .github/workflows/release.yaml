@@ -1,4 +1,4 @@
-name: Run Azure CLI Login with OpenID Connect
+name: release
 on:
   workflow_dispatch:
   push:
