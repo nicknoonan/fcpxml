@@ -1,4 +1,4 @@
-module parser
+module github.com/nicknoonan/fcpxml
 
 go 1.24.3
 

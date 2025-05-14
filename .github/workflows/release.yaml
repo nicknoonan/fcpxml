@@ -34,7 +34,10 @@ jobs:
         go build -o parser
 
     - name: Test
-      run: go test
+      shell: bash
+      run: |
+        cd src
+        go test
 
     - name: Azure CLI Login
       uses: azure/login@v2
