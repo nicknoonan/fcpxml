@@ -31,6 +31,9 @@ jobs:
         GOOS=windows
         go build -o parser.exe
         GOOS=linux
+        go build -o parser_linux
+        GOOS=darwin
+        GOARCH=arm64
         go build -o parser
 
     - name: Test
@@ -57,3 +60,4 @@ jobs:
           az account show
           az storage blob upload -f src/parser.exe --account-name $ACCOUNT_NAME --container-name $CONTAINER_NAME --overwrite
           az storage blob upload -f src/parser --account-name $ACCOUNT_NAME --container-name $CONTAINER_NAME --overwrite
+          az storage blob upload -f src/parser_linux --account-name $ACCOUNT_NAME --container-name $CONTAINER_NAME --overwrite
