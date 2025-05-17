@@ -10,6 +10,14 @@ permissions:
 
 jobs: 
   release:
+    strategy:
+      matrix:
+        goos: [windows,linux,darwin]
+        goarch: [amd64,arm64]
+        include:
+        - goos: windows
+          extension: .exe
+
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -29,17 +37,10 @@ jobs:
       shell: bash
       run: |
         cd src
-        export GOOS=windows
+        export GOOS=${{matrix.goos}}
+        export GOARCH=${{matrix.goarch}}
         go env GOOS GOARCH
-        go build -o parser.exe
-        export GOOS=linux
-        go env GOOS GOARCH
-        go build -o parser_linux
-        export GOOS=darwin
-        export GOARCH=arm64
-        go env GOOS GOARCH
-        go build -o parser
-
+        go build -o parser_${{matrix.goos}}_${{matrix.goarch}}${{matrix.extension}}
     - name: Test
       shell: bash
       run: |
@@ -62,6 +63,5 @@ jobs:
         azcliversion: latest
         inlineScript: |
           az account show
-          az storage blob upload -f src/parser.exe --account-name $ACCOUNT_NAME --container-name $CONTAINER_NAME --overwrite
-          az storage blob upload -f src/parser --account-name $ACCOUNT_NAME --container-name $CONTAINER_NAME --overwrite
-          az storage blob upload -f src/parser_linux --account-name $ACCOUNT_NAME --container-name $CONTAINER_NAME --overwrite
+          az storage blob upload -f src/parser_${{matrix.goos}}_${{matrix.goarch}}${{matrix.extension}} --account-name $ACCOUNT_NAME --container-name $CONTAINER_NAME --overwrite
+          
