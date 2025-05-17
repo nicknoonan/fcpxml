@@ -26,16 +26,17 @@ jobs:
         go get .
 
     - name: Build
+      shell: bash
       run: |
         cd src
-        GOOS=windows
+        export GOOS=windows
         go env GOOS GOARCH
         go build -o parser.exe
-        GOOS=linux
+        export GOOS=linux
         go env GOOS GOARCH
         go build -o parser_linux
-        GOOS=darwin
-        GOARCH=arm64
+        export GOOS=darwin
+        export GOARCH=arm64
         go env GOOS GOARCH
         go build -o parser
 
