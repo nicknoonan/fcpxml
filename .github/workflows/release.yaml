@@ -29,11 +29,14 @@ jobs:
       run: |
         cd src
         GOOS=windows
+        go env GOOS GOARCH
         go build -o parser.exe
         GOOS=linux
+        go env GOOS GOARCH
         go build -o parser_linux
         GOOS=darwin
         GOARCH=arm64
+        go env GOOS GOARCH
         go build -o parser
 
     - name: Test
