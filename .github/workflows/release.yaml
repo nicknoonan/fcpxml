@@ -8,7 +8,7 @@ on:
 permissions:
   id-token: write
 
-jobs: 
+jobs:
   release:
     strategy:
       matrix:
@@ -26,6 +26,10 @@ jobs:
       uses: actions/setup-go@v5
       with:
         go-version: '1.24.x'
+        cache-dependency-path: |
+          src/go.sum
+          src/api/go.sum
+          src/parser/go.sum
 
     - name: Install dependencies
       shell: bash
