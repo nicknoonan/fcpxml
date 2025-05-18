@@ -32,7 +32,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   bool _isLoading = false;
-  String _timeStamps = "Upload a .fcpxml file!";
+  String _timeStamps = "Upload a .fcpxml file to begin!";
 
   void _setTimeStamps(String timeStamps) {
     setState(() {
@@ -50,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(backgroundColor: Theme.of(context).colorScheme.inversePrimary, title: Text(widget.title)),
-      body: Center(child: Column(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[Text(_timeStamps)])),
+      body: Center(child: Column(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[SelectableText(_timeStamps)])),
       floatingActionButton: Row(mainAxisAlignment: MainAxisAlignment.end, spacing: 10, children: <Widget>[
           FileUploadButton(isLoading: _isLoading, setIsLoading: _setIsLoading, setTimeStamps: _setTimeStamps),
           ClearTimeStampsButton(setTimeStamps: _setTimeStamps)
