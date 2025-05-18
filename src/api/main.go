@@ -2,10 +2,55 @@ package main
 
 import (
 	// "os"
+	"fmt"
+	"io"
 	"log"
-	// "github.com/nicknoonan/fcpxml/src/parser"
+	"net/http"
+	"os"
+
+	"github.com/nicknoonan/fcpxml/src/parser"
+	"github.com/gin-gonic/gin"
+	"github.com/joho/godotenv"
 )
 
 func main() {
-	log.Println("hello")
+	config := loadConfig()
+	router := gin.Default()
+	router.POST("/upload", func(c *gin.Context) {
+		// Single file
+		file, err := c.FormFile("fcpxml")
+		if (err != nil) {
+			c.String(http.StatusBadRequest, "no form file \"fcpxml\" was found")
+			return;
+		}
+		opened, err := file.Open()
+		if (err != nil) {
+			c.String(http.StatusBadRequest, err.Error())
+			return;
+		}
+		fileBytes, err := io.ReadAll(opened)
+		if (err != nil) {
+			c.String(http.StatusBadRequest, err.Error())
+			return;
+		}
+		// log.Println(file.Filename)
+		// log.Println(string(fileBytes))
+
+		fileContents := string(fileBytes)
+		timeStamps, err := parser.Parse(fileContents)
+		if (err != nil) {
+			c.String(http.StatusInternalServerError, err.Error())
+			log.Fatal(err)
+		}
+	
+		c.String(http.StatusOK, timeStamps)
+	})
+	router.Run(fmt.Sprintf(":%s",config.port))
+}
+
+func loadConfig() Config {
+	godotenv.Load()
+	return Config{
+		port: os.Getenv("PORT"),
+	}
 }

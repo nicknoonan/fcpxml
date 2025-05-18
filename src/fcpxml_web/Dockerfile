@@ -1,4 +1,4 @@
-FROM ubuntu:latest as builder
+FROM debian:bookworm-slim as builder
 RUN apt-get update -y && \
     apt-get upgrade -y && \
     apt-get install --no-install-recommends -y \
@@ -8,12 +8,15 @@ RUN curl https://storage.googleapis.com/flutter_infra_release/releases/stable/li
 RUN tar -xf /flutter/flutter_linux_3.29.3-stable.tar.xz -C /flutter/
 ENV PATH "$PATH:/flutter/flutter/bin"
 RUN git config --global --add safe.directory /flutter/flutter
-COPY . /app
+COPY lib /app/lib
+COPY web /app/web
+COPY pubspec.lock /app
+COPY pubspec.yaml /app
 WORKDIR /app
 RUN flutter pub get
 RUN flutter build web
 
-FROM debian:bookworm-slim
-RUN apt-get update -y && apt-get upgrade -y && apt-get install -y python3
+FROM alpine:3.21
+RUN apk update && apk upgrade && apk add python3
 COPY --from=builder /app/build/web /app/build/web
 CMD ["python", "-m", "http.server", "8080", "-d", "/app/build/web"]
