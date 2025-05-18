@@ -44,7 +44,7 @@ jobs:
 
     - name: Test
       shell: bash
-      working-directory: src
+      working-directory: src/parser
       run: |
         go test
 
