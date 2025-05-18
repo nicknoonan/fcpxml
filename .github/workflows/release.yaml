@@ -29,22 +29,23 @@ jobs:
 
     - name: Install dependencies
       shell: bash
+      working-directory: src
       run: |
-        cd src
         go get .
 
     - name: Build
       shell: bash
+      working-directory: src
       run: |
-        cd src
         export GOOS=${{matrix.goos}}
         export GOARCH=${{matrix.goarch}}
         go env GOOS GOARCH
         go build -o parser_${{matrix.goos}}_${{matrix.goarch}}${{matrix.extension}}
+
     - name: Test
       shell: bash
+      working-directory: src
       run: |
-        cd src
         go test
 
     - name: Azure CLI Login
@@ -64,4 +65,3 @@ jobs:
         inlineScript: |
           az account show
           az storage blob upload -f src/parser_${{matrix.goos}}_${{matrix.goarch}}${{matrix.extension}} --account-name $ACCOUNT_NAME --container-name $CONTAINER_NAME --overwrite
-          

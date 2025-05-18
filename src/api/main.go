@@ -13,7 +13,7 @@ func main() {
 		if err != nil {
 			log.Fatalf("Error while loading fcpxml file: %v", err)
 		}
-		result, err := parser.Parse(string(contentBytes))
+		result, err := Parse(string(contentBytes))
 		if err != nil {
 			log.Fatalf("Error while parsing: %v", err)
 		}

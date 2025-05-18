@@ -1,4 +1,4 @@
-package main
+package parser
 
 import (
 	"fmt"
@@ -15,12 +15,14 @@ import (
 )
 
 func Parse(contents string) (string, error) {
-	
 	if (strings.Trim(contents, "\n") == "") {
 		return "", nil
 	}
 	xml, err := mxj.NewMapXml([]byte(contents))
 	if err != nil {
+		if err.Error() == "EOF" {
+			return "", nil;
+		}
 		return "", err
 	}
 
@@ -112,7 +114,8 @@ func ParseRationalTimeString(time string) (float64) {
 	rat := new(big.Rat)
 	offsetRat, ok := rat.SetString(strings.Trim(time, "s"))
 	if (!ok) {
-		// this should be handled better
+		message := fmt.Sprintf("failed to parse rational time string: \"%s\"",time)
+		panic(message)
 	}
 	seconds, _ = offsetRat.Float64()
 	if (seconds >= 3600) {
