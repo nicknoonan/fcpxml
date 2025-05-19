@@ -2,6 +2,8 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:file_picker/file_picker.dart';
+import 'package:http/http.dart' as http;
+import 'package:http_parser/http_parser.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,9 +16,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'fcpxml parser',
       theme: ThemeData(colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple)),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Find chapter-markers in .fcpxml'),
     );
   }
 }
@@ -50,13 +52,17 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(backgroundColor: Theme.of(context).colorScheme.inversePrimary, title: Text(widget.title)),
-      body: Center(child: Column(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[SelectableText(_timeStamps)])),
-      floatingActionButton: Row(mainAxisAlignment: MainAxisAlignment.end, spacing: 10, children: <Widget>[
+      body: Center(
+        child: Column(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[SelectableText(_timeStamps)]),
+      ),
+      floatingActionButton: Row(
+        mainAxisAlignment: MainAxisAlignment.end,
+        spacing: 10,
+        children: <Widget>[
           FileUploadButton(isLoading: _isLoading, setIsLoading: _setIsLoading, setTimeStamps: _setTimeStamps),
-          ClearTimeStampsButton(setTimeStamps: _setTimeStamps)
-        ]
-      )
-      ,
+          ClearTimeStampsButton(setTimeStamps: _setTimeStamps),
+        ],
+      ),
     );
   }
 }
@@ -72,7 +78,7 @@ class ClearTimeStampsButton extends StatelessWidget {
       onPressed: () {
         setTimeStamps("Upload a .fcpxml file to begin!");
       },
-      child: Icon(Icons.refresh_sharp)
+      child: Icon(Icons.refresh_sharp),
     );
   }
 }
@@ -88,14 +94,24 @@ class FileUploadButton extends StatelessWidget {
     return FloatingActionButton(
       tooltip: 'Upload a .fcpxml file to parse',
       onPressed: () async {
-        var picked = await FilePicker.platform.pickFiles();
+        var picked = await FilePicker.platform.pickFiles(withData: true);
         if (picked != null) {
           // print(picked.files.first.name);
-          // print(picked.files.first.bytes);
+          print(picked.files.first.bytes);
 
           setIsLoading(true);
-          await Future.delayed(Duration(seconds: 3));
-          setTimeStamps("test");
+          final uri = Uri.parse('http://localhost:8080/upload');
+          var request = http.MultipartRequest('POST', uri);
+          final httpImage = http.MultipartFile.fromBytes(
+            'fcpxml',
+            picked.files.first.bytes!.toList(),
+            contentType: MediaType.parse("multipart/form-data"),
+            filename: 'fcpxml',
+          );
+          request.files.add(httpImage);
+          final response = await request.send();
+          final responseString = await response.stream.bytesToString();
+          setTimeStamps(responseString);
           setIsLoading(false);
         }
       },
@@ -103,38 +119,3 @@ class FileUploadButton extends StatelessWidget {
     );
   }
 }
-
-
-      // Future<void>  upload() async {
-      //   for (var i = 0; i < files.length; i++) {
-      //     final file = files[i];
-      //     final completer = Completer<List<int>>();
-      //     final reader = FileReader();
-
-      //     reader.onLoad.listen((event) {
-      //       final bytesData = reader.result as List<int>;
-      //       completer.complete(bytesData);
-      //     });
-
-      //     reader.readAsArrayBuffer(file);
-      //     final bytesData = await completer.future;
-      //     final request = http.MultipartRequest("POST", Uri.parse(url));
-      //     final headers = {
-      //       "Authorization": "Bearer $token",
-      //       "Content-Type": "multipart/form-data",
-      //       "Content-Length": bytesData.length.toString(),
-      //       "Accept": "*/*",
-      //     };
-      //     request.headers.addAll(headers);
-      //     if (requestFields != null) {
-      //       request.fields.addAll(requestFields!);
-      //     }
-      //     request.files.add(http.MultipartFile.fromBytes(
-      //       'files',
-      //       bytesData,
-      //       filename: file.name,
-      //     ));
-      //     final response = await request.send();
-      //     handleResponse(response);
-      //   }
-      // }

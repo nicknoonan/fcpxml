@@ -16,21 +16,25 @@ import (
 func main() {
 	config := loadConfig()
 	router := gin.Default()
+	router.Static("/", config.assets)
 	router.POST("/upload", func(c *gin.Context) {
 		// Single file
 		file, err := c.FormFile("fcpxml")
 		if (err != nil) {
 			c.String(http.StatusBadRequest, "no form file \"fcpxml\" was found")
+			log.Println(err)
 			return;
 		}
 		opened, err := file.Open()
 		if (err != nil) {
 			c.String(http.StatusBadRequest, err.Error())
+			log.Println(err)
 			return;
 		}
 		fileBytes, err := io.ReadAll(opened)
 		if (err != nil) {
 			c.String(http.StatusBadRequest, err.Error())
+			log.Println(err)
 			return;
 		}
 		// log.Println(file.Filename)
@@ -52,5 +56,6 @@ func loadConfig() Config {
 	godotenv.Load()
 	return Config{
 		port: os.Getenv("PORT"),
+		assets: os.Getenv("ASSETS"),
 	}
 }
