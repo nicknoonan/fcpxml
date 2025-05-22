@@ -1,3 +1,5 @@
+ARG HOST="parser.nicknoonan.net"
+
 FROM debian:bookworm-slim as flutterBuilder
 RUN apt-get update -y && \
     apt-get upgrade -y && \
@@ -13,8 +15,9 @@ COPY fcpxml_web/web /app/web
 COPY fcpxml_web/pubspec.lock /app
 COPY fcpxml_web/pubspec.yaml /app
 WORKDIR /app
+ARG HOST
 RUN flutter pub get
-RUN flutter build web
+RUN flutter build web --dart-define="FCPXML_HOST=$HOST"
 
 FROM golang:1.24 as goBuilder
 WORKDIR /app
@@ -31,6 +34,8 @@ FROM golang:1.24-alpine
 RUN apk add libc6-compat
 COPY --from=flutterBuilder /app/build/web /app/api/build/web
 COPY --from=goBuilder /app/api/api /app/api
+ARG HOST
 ENV ASSETS="/app/api/build/web"
 ENV PORT="8080"
+ENV FCPXML_HOST=${HOST}
 CMD ["/app/api/api"]

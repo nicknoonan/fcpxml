@@ -14,7 +14,7 @@ COPY pubspec.lock /app
 COPY pubspec.yaml /app
 WORKDIR /app
 RUN flutter pub get
-RUN flutter build web
+RUN flutter build web --dart-define=FCPXML_HOST=localhost
 
 FROM alpine:3.21
 RUN apk update && apk upgrade && apk add python3

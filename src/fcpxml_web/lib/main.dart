@@ -60,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
         spacing: 10,
         children: <Widget>[
           FileUploadButton(isLoading: _isLoading, setIsLoading: _setIsLoading, setTimeStamps: _setTimeStamps),
-          ClearTimeStampsButton(setTimeStamps: _setTimeStamps),
+          ClearTimeStampsButton(setTimeStamps: _setTimeStamps, setIsLoading: _setIsLoading),
         ],
       ),
     );
@@ -68,8 +68,9 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 class ClearTimeStampsButton extends StatelessWidget {
-  const ClearTimeStampsButton({super.key, required this.setTimeStamps});
+  const ClearTimeStampsButton({super.key, required this.setTimeStamps, required this.setIsLoading});
   final ValueChanged<String> setTimeStamps;
+  final ValueChanged<bool> setIsLoading;
 
   @override
   Widget build(BuildContext context) {
@@ -77,6 +78,7 @@ class ClearTimeStampsButton extends StatelessWidget {
       tooltip: 'Clear the timestamps on the screen',
       onPressed: () {
         setTimeStamps("Upload a .fcpxml file to begin!");
+        setIsLoading(false);
       },
       child: Icon(Icons.refresh_sharp),
     );
@@ -97,10 +99,13 @@ class FileUploadButton extends StatelessWidget {
         var picked = await FilePicker.platform.pickFiles(withData: true);
         if (picked != null) {
           // print(picked.files.first.name);
-          print(picked.files.first.bytes);
+          //print(picked.files.first.bytes);
 
           setIsLoading(true);
-          final uri = Uri.parse('http://localhost:8080/upload');
+          setTimeStamps("Loading...");
+          const host = String.fromEnvironment('FCPXML_HOST', defaultValue: 'localhost');
+          const protocol = (host == 'localhost') ? 'http' : 'https';
+          final uri = Uri.parse("${protocol}://${host}/api/upload");
           var request = http.MultipartRequest('POST', uri);
           final httpImage = http.MultipartFile.fromBytes(
             'fcpxml',
