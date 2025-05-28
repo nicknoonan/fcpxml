@@ -4,15 +4,33 @@ import (
 	"fmt"
 	"maps"
 	"reflect"
+	"slices"
 
 	//"log"
 	"math/big"
 	"strings"
 
-	"github.com/clbanning/mxj/v2"
+	// "sort"
 	"time"
-	"sort"
+
+	"github.com/clbanning/mxj/v2"
 )
+
+type ChapterMarker struct {
+	time time.Time
+	name string
+}
+
+func (cm ChapterMarker) String() string {
+	return fmt.Sprintf("%s %s", cm.time.Format(time.TimeOnly), cm.name)
+}
+
+func sortChapterMarkers(markers []ChapterMarker) {
+	slices.SortFunc(markers, 
+		func(a, b ChapterMarker) int {
+			return a.time.Compare(b.time)
+	})
+}
 
 func Parse(contents string) (string, error) {
 	if (strings.Trim(contents, "\n") == "") {
@@ -30,16 +48,16 @@ func Parse(contents string) (string, error) {
 	parsedContent := ""
 	// iterate the list of chapter marker XML paths
 	root := []map[string]interface{}{ele.(map[string]interface{})}
-	markers := findChapterMarker(0.0,0.0,"fcpxml",root,[]string{})
-	sort.Strings(markers)
+	markers := findChapterMarker(0.0,0.0,"fcpxml",root,[]ChapterMarker{})
+	sortChapterMarkers(markers)
 	for _, marker := range markers {
-		parsedContent += marker
+		parsedContent += marker.String()
 		parsedContent += "\n"
 	}
 	return parsedContent, nil
 }
 
-func findChapterMarker(start, offset float64, tag string, xml []map[string]interface{}, acc []string) ([]string) {
+func findChapterMarker(start, offset float64, tag string, xml []map[string]interface{}, acc []ChapterMarker) ([]ChapterMarker) {
 	// if chapter markers then 
 	// do a little math and 
 	// format a little string
@@ -48,11 +66,14 @@ func findChapterMarker(start, offset float64, tag string, xml []map[string]inter
 		for _, element := range xml {
 			startString := element["-start"].(string)
 			if (start == 0) { 
-				start = ParseRationalTimeString(startString)
+				start = parseRationalTimeString(startString)
 			} else {
-				start -= ParseRationalTimeString(startString)
+				start -= parseRationalTimeString(startString)
 			}
-			marker := FormatTimeStamp(start, offset, element["-value"].(string))
+			marker := ChapterMarker{
+				getTimeStamp(start, offset),
+				element["-value"].(string),
+			}
 			acc = append(acc, marker)
 		}
 		return acc
@@ -86,14 +107,14 @@ func findChapterMarker(start, offset float64, tag string, xml []map[string]inter
 				}
 				if ((xmlObj["-offset"] != nil) && (tag != "spine") && (offset == 0.0)) {
 					offsetString := xmlObj["-offset"].(string)
-					offset += ParseRationalTimeString(offsetString)
+					offset += parseRationalTimeString(offsetString)
 				}
 				if ((xmlObj["-start"] != nil) && (tag != "spine")) {
 					startString := xmlObj["-start"].(string)
 					if (start == 0) { 
-						start = ParseRationalTimeString(startString)
+						start = parseRationalTimeString(startString)
 					} else {
-						start -= ParseRationalTimeString(startString)
+						start -= parseRationalTimeString(startString)
 					}
 				}
 				acc = findChapterMarker(start, offset, key, children, acc)
@@ -105,11 +126,11 @@ func findChapterMarker(start, offset float64, tag string, xml []map[string]inter
 	return acc
 }
 
-func FormatMarkerString(name, time string) (string) {
+func formatMarkerString(name, time string) (string) {
 	return fmt.Sprintf("%s  %s", name, time)
 }
 
-func ParseRationalTimeString(time string) (float64) {
+func parseRationalTimeString(time string) (float64) {
 	seconds := 0.0
 	rat := new(big.Rat)
 	offsetRat, ok := rat.SetString(strings.Trim(time, "s"))
@@ -124,13 +145,20 @@ func ParseRationalTimeString(time string) (float64) {
 	return seconds
 }
 
-func FormatTimeStamp(start, offset float64, value string) (string) {
+func getTimeStamp(start, offset float64) (time.Time){
 	timeValue, _ := time.Parse(time.RFC3339, "1998-12-03T00:00:00Z")
 	duration, err := time.ParseDuration(fmt.Sprintf("%ds",int(offset+start)))
 	if (err != nil) {
 		panic("failed to parse time duration")
 	}
 	timeValue = timeValue.Add(duration)
-	
-	return fmt.Sprintf("%s %s", timeValue.Format(time.TimeOnly), value)
+	return timeValue
+}
+
+func Map[T, U any](input []T, transform func(T) U) []U {
+    output := make([]U, len(input))
+    for i, element := range input {
+        output[i] = transform(element)
+    }
+    return output
 }
