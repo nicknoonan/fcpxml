@@ -37,6 +37,7 @@ dependencies:
   file_picker: ^10.1.9
   http: ^1.4.0
   http_parser: ^4.1.2
+  flutter_dropzone: ^4.2.1
 
 dev_dependencies:
   flutter_test:

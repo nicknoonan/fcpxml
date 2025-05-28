@@ -1,9 +1,7 @@
-import 'dart:io';
-
+import 'package:fcpxml_web/widgets/DropFileZone.dart';
 import 'package:flutter/material.dart';
-import 'package:file_picker/file_picker.dart';
-import 'package:http/http.dart' as http;
-import 'package:http_parser/http_parser.dart';
+import 'widgets/ClearTimeStampsButton.dart';
+import 'widgets/FileUploadButton.dart';
 
 void main() {
   runApp(const MyApp());
@@ -53,7 +51,10 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(backgroundColor: Theme.of(context).colorScheme.inversePrimary, title: Text(widget.title)),
       body: Center(
-        child: Column(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[SelectableText(_timeStamps)]),
+        child: Column(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
+          SelectableText(_timeStamps),
+          DropFileZone(setTimeStamps: _setTimeStamps),
+        ]),
       ),
       floatingActionButton: Row(
         mainAxisAlignment: MainAxisAlignment.end,
@@ -63,64 +64,6 @@ class _MyHomePageState extends State<MyHomePage> {
           ClearTimeStampsButton(setTimeStamps: _setTimeStamps, setIsLoading: _setIsLoading),
         ],
       ),
-    );
-  }
-}
-
-class ClearTimeStampsButton extends StatelessWidget {
-  const ClearTimeStampsButton({super.key, required this.setTimeStamps, required this.setIsLoading});
-  final ValueChanged<String> setTimeStamps;
-  final ValueChanged<bool> setIsLoading;
-
-  @override
-  Widget build(BuildContext context) {
-    return FloatingActionButton(
-      tooltip: 'Clear the timestamps on the screen',
-      onPressed: () {
-        setTimeStamps("Upload a .fcpxml file to begin!");
-        setIsLoading(false);
-      },
-      child: Icon(Icons.refresh_sharp),
-    );
-  }
-}
-
-class FileUploadButton extends StatelessWidget {
-  const FileUploadButton({required this.isLoading, required this.setIsLoading, required this.setTimeStamps, super.key});
-  final bool isLoading;
-  final ValueChanged<bool> setIsLoading;
-  final ValueChanged<String> setTimeStamps;
-
-  @override
-  Widget build(BuildContext context) {
-    return FloatingActionButton(
-      tooltip: 'Upload a .fcpxml file to parse',
-      onPressed: () async {
-        var picked = await FilePicker.platform.pickFiles(withData: true);
-        if (picked != null) {
-          // print(picked.files.first.name);
-          //print(picked.files.first.bytes);
-
-          setIsLoading(true);
-          setTimeStamps("Loading...");
-          const host = String.fromEnvironment('FCPXML_HOST', defaultValue: 'localhost');
-          const protocol = (host == 'localhost') ? 'http' : 'https';
-          final uri = Uri.parse("${protocol}://${host}/api/upload");
-          var request = http.MultipartRequest('POST', uri);
-          final httpImage = http.MultipartFile.fromBytes(
-            'fcpxml',
-            picked.files.first.bytes!.toList(),
-            contentType: MediaType.parse("multipart/form-data"),
-            filename: 'fcpxml',
-          );
-          request.files.add(httpImage);
-          final response = await request.send();
-          final responseString = await response.stream.bytesToString();
-          setTimeStamps(responseString);
-          setIsLoading(false);
-        }
-      },
-      child: isLoading ? const Icon(Icons.warning) : const Icon(Icons.add),
     );
   }
 }
